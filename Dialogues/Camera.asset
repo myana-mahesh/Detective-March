@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: Camera
+  m_EditorClassIdentifier: 
+  sentences:
+  - "(Chuckles) I never thought this would be so much fun. \t                                             
+    After a long time, I went to the beach. "
+  - "I can still feel the cool breeze under the bright sun when I close my eyes.
+    \t                                     (Chuckles) Ohhh\u2026. What a weekend! "
+  - "Let\u2019s get back to business. My mum said there\u2019s a letter for me. Who
+    could it be?"
+  Audios:
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}

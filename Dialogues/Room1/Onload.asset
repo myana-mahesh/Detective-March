@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: Onload
+  m_EditorClassIdentifier: 
+  sentences:
+  - Finally, I got my first case. Soon, my dream to become famous detective will
+    come true. But how much should I charge Milly?
+  - "Oh, March! Thank God you\u2019ve arrived. I\u2019m so relieved. (Depressed)"
+  - What happened? You look depressed.
+  - "Many things have changed since my grandfather passed away\u2026 "
+  - "Mr. Peter Robinson, right? I\u2019m so sorry. When did this happen?"
+  - 'Last year, he died of a heart attack. '
+  - ' A heart attack? '
+  - Yes. This was a year ago. We all went to the nearby park while Grandpa stayed
+    at home. He said he had some work to do on the computer.
+  - " But when we came back, we found him dead, right on his computer table. \t                 
+    A few months after his death, strange things started to happen. "
+  - "Ahh\u2026 strange things? (Little worried as she is scared of ghosts)"
+  - Creepy noises in the night, moving furniture, objects went missing. And an apparition.
+  - "You mean a g\u2026 ghost?"
+  - Yes, a ghost of my grandfather. Some family members have seen him
+  - So why did you call me?
+  - "You are a detective, that\u2019s why. "
+  - "But I am not good with ghosts. I\u2019m totally afraid of them. \t                                                                                    
+    I\u2019ll just be going back home, now. "
+  - "You are not. Don\u2019t forget why your parents gave you this name."
+  - "I know, so I can always move forward and never look back. \t                                                             
+    That\u2019s what I am doing. I will not look back because I don\u2019t want to
+    see a ghost behind me! "
+  - "I know you desperately need a case\u2026 and here is one. \tI will pay you good
+    amount "
+  - " Well\u2026 you\u2019ve got my attention. How much?"
+  - "Hmmm\u2026 a ticket to local circus"
+  - "What? I\u2019ve been there couple of times already anyway."
+  - "I know, but I had one extr\u2026 I mean, ahhh\u2026 I\u2026 bought this just
+    for you.  \t              Now, please concentrate on the case. "
+  - " Hmmm\u2026 Where is the rest of your family? "
+  - 'They all moved. Nobody wants to stay in the haunted house. '
+  - Me too! But why are you here?
+  - 'I stayed here because of the will. The will is missing.                                                           
+    My grandfather used to keep it in his safe but now it is not there. '
+  - ' You mean someone has stolen it'
+  - 'No, I think my grandfather has hidden it somewhere else. '
+  - And you want it back, right?
+  - 'Of course. My uncle, Mr. Barnard has a will which mentions this house now belongs
+    to him. But why would my grandfather give his property to Mr. Bernard, his nephew,
+    instead of giving it to his legal heir who is my mom? '
+  - "I want the original will back in my possession. I searched the whole house but
+    I haven\u2019t been able to find it anywhere. Please help me March. You are my
+    last hope. "
+  - Alright, you can count on me.
+  - 'I can use my camera on certain areas to get more information about them. Let
+    me try dragging & dropping it on the fireplace. '
+  Audios:
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
