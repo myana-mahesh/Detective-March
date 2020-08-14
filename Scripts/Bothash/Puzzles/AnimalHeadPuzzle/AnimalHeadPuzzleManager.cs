@@ -6,6 +6,7 @@ public class AnimalHeadPuzzleManager : MonoBehaviour {
     // Start is called before the first frame update
 
     public List<SpriteRenderer> listOfPuzzlePieces;
+    public GameObject buffaloHead;
     public GameObject BlockingObject;
     public GameObject RewardObject;
     public GameObject ParentRoom;
@@ -38,6 +39,7 @@ public class AnimalHeadPuzzleManager : MonoBehaviour {
 
         if (_isPuzzleCompleted && _isRewardProcessed && _rewardCollected) {
             ParentRoom.SetActive (false);
+
         }
 
     }
@@ -96,6 +98,8 @@ public class AnimalHeadPuzzleManager : MonoBehaviour {
                 RewardObject.SetActive(true);
                 _isRewardProcessed = true;
                 _isPuzzleCompleted = true;
+                buffaloHead.SetActive(true);
+                
             }
 
         } else if (!_isRewardProcessed) {
@@ -115,6 +119,8 @@ public class AnimalHeadPuzzleManager : MonoBehaviour {
     public void CollectReward () {
         _rewardCollected = true;
         _isPuzzleCompleted = true;
+        //PlayerPrefs.SetBool("animalHeadCompleted",true);
+        
 
     }
 

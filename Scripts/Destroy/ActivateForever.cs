@@ -13,6 +13,7 @@ public class ActivateForever : MonoBehaviour
     
     private void OnMouseDown()
     {
+        SoundManager.Instance.gameSounds[0].Play();
         item.SetActive(true);
         hideItem.SetActive(false);
     }

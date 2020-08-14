@@ -24,4 +24,5 @@ public class Clickable : MonoBehaviour {
         bothash.DialogueM.Instance.Audio = Audios;
         bothash.DialogueM.Instance.startDialogue ();
     }
+    
 }

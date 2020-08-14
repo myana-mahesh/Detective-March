@@ -36,7 +36,10 @@ namespace bothash {
                         return;
                     }
                 } */
-                if (!PlayerPrefs.HasKey (this.gameObject.name)) {
+                if(this.gameObject.name=="Kitchen"){
+                    StartCoroutine(waitForchair());
+                }
+                else if(!PlayerPrefs.HasKey (this.gameObject.name)) {
                     PlayerPrefs.SetInt (this.gameObject.name, 1);
                     DialogueM.Instance.sentence = Dialogues.sentences;
                     DialogueM.Instance.Avatar = character;
@@ -63,6 +66,16 @@ namespace bothash {
                 DialogueM.Instance.startDialogue ();
             }
 
+        }
+        IEnumerator waitForchair(){
+            yield return new WaitForSeconds(2.2f);
+            if (!PlayerPrefs.HasKey (this.gameObject.name)) {
+                    PlayerPrefs.SetInt (this.gameObject.name, 1);
+                    DialogueM.Instance.sentence = Dialogues.sentences;
+                    DialogueM.Instance.Avatar = character;
+                    DialogueM.Instance.Audio = Dialogues.Audios;
+                    DialogueM.Instance.startDialogue ();
+                }
         }
     }
 }

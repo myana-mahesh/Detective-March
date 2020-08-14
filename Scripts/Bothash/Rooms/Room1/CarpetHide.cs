@@ -16,6 +16,7 @@ public class CarpetHide : MonoBehaviour
         
     }
     private void OnMouseDown() {
+        SoundManager.Instance.gameSounds[4].Play();
         this.gameObject.SetActive(false);
     }
 }

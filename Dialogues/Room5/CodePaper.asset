@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: CodePaper
   m_EditorClassIdentifier: 
   sentences:
-  - (Cough, Cough) A dust covered paper.                                                                                                  
-    This might be a clue.
+  - A dust covered paper.
+  - This might be a clue.
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: b3eec205d57b36443852500bddc2f291, type: 3}
+  - {fileID: 8300000, guid: 56cac756a5ff87047b7711baf50d935a, type: 3}

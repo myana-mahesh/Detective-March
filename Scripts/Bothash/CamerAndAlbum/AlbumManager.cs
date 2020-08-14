@@ -77,6 +77,9 @@ namespace bothash
                 images[albumSO.indexesOfActive[i]].SetActive(true);
             }
         }
+        
+         
     }
+    
 }
 

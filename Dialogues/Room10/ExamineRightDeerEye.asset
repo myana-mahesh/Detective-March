@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: ExamineRightDeerEye
   m_EditorClassIdentifier: 
   sentences:
-  - "An eye is stuck in the sink hole. \t                                                                                          
-    I need something to remove it "
+  - An eye is stuck in the sink hole.
+  - I need something to remove it.
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: c64e0bfa783e0464d8898a3829053a5c, type: 3}
+  - {fileID: 8300000, guid: 0b340df7c054a064292e5b6d75f1497c, type: 3}

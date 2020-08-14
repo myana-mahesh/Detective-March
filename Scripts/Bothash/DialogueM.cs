@@ -95,6 +95,8 @@ namespace bothash {
                     PlayerPrefs.SetInt ("paintigOjectsPicked", 1);
 
                 }
+                Asource.Stop();
+                Asource.clip=null;
                 Avatar[j].SetActive (false);
                 DialogueParent.SetActive (false);
                 BlockScreen.SetActive (false);

@@ -15,4 +15,4 @@ MonoBehaviour:
   sentences:
   - 'This drawer needs a handle. '
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: b3b45c2aac0773540b0461b8b689147e, type: 3}

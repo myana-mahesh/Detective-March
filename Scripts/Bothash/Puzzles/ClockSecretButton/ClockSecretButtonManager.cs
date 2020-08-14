@@ -9,7 +9,8 @@ public class ClockSecretButtonManager : MonoBehaviour
     public List<GameObject> Objects;
 
     public GameObject Reward;
-
+    public GameObject examineClock;
+    
     public static ClockSecretButtonManager Instance;
 
 
@@ -66,8 +67,10 @@ public class ClockSecretButtonManager : MonoBehaviour
             if (_stack.Peek().name == caller.name)
             {
                 _stack.Pop();
+                SoundManager.Instance.gameSounds[5].Play();
+
                 if (_stack.Count == 0)
-                {
+                {   examineClock.SetActive(false);
                     Reward.SetActive(true);
                     Debug.Log("Won");
                     _puzzleCompleted = true;
@@ -77,6 +80,7 @@ public class ClockSecretButtonManager : MonoBehaviour
             else
             {
                 Debug.Log("Sequence Not Found, Resetting Stack");
+                SoundManager.Instance.gameSounds[7].Play();
                 ClearAndResetStack();
                 Reward.SetActive(false);
             }

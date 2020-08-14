@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: Camera
   m_EditorClassIdentifier: 
   sentences:
-  - "(Chuckles) I never thought this would be so much fun. \t                                             
-    After a long time, I went to the beach. "
-  - "I can still feel the cool breeze under the bright sun when I close my eyes.
-    \t                                     (Chuckles) Ohhh\u2026. What a weekend! "
+  - I never thought this would be so much fun.
+  - After a long time, I went to the beach.
+  - I can still feel the cool breeze under the bright sun when I close my eyes.
+  - "Ohhh\u2026. What a weekend!"
   - "Let\u2019s get back to business. My mum said there\u2019s a letter for me. Who
     could it be?"
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: 82952b7b2534c0b4fa2d79f046f34f1e, type: 3}
+  - {fileID: 8300000, guid: 365d918658b2b9042b8817c57d5f699d, type: 3}
+  - {fileID: 8300000, guid: 32199878a055fbe45a24b9888e779d18, type: 3}
+  - {fileID: 8300000, guid: f26c02ef09d3ad0488ac492cc3b32e11, type: 3}
+  - {fileID: 8300000, guid: 059c2d7f2c8b25044a9913bd2fe41c98, type: 3}

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: GrandpaClock
   m_EditorClassIdentifier: 
   sentences:
-  - "A beautiful clock. It\u2019s not working though. \t                                                                                                  
-    Wait! There is something scribbled at the bottom. "
+  - "A beautiful clock. It\u2019s not working though."
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: 57d61ef55efe34546a256e401e7a6b23, type: 3}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: Onload Demo
+  m_EditorClassIdentifier: 
+  sentences:
+  - I can use my camera on certain areas to get more information about them.
+  - Let me try dragging & dropping it on the fireplace.
+  Audios:
+  - {fileID: 8300000, guid: a2d80eb724ff2b04daaa9425fc4f9496, type: 3}
+  - {fileID: 8300000, guid: 199cc34218db8ad4190618fc2564a1f0, type: 3}

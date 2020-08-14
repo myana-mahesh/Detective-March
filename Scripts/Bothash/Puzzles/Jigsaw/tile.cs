@@ -45,7 +45,7 @@ namespace bothash {
             //this.gameObject.transform.localPosition = Jigsaw.Instance.blankTile.transform.position;
             randI = Jigsaw.Instance.posAfterRandom[index];
             Debug.Log (Jigsaw.Instance.posAfterRandom[index]);
-            if (randI - 1 == Jigsaw.Instance.blankPos || randI + 1 == Jigsaw.Instance.blankPos || randI + 5 == Jigsaw.Instance.blankPos || randI - 5 == Jigsaw.Instance.blankPos) {
+            if (randI - 1 == Jigsaw.Instance.blankPos || randI + 1 == Jigsaw.Instance.blankPos || randI + 4 == Jigsaw.Instance.blankPos || randI - 4 == Jigsaw.Instance.blankPos) {
                 Debug.Log ("can swap");
                 Jigsaw.Instance.posAfterRandom[index] = Jigsaw.Instance.blankPos;
                 Jigsaw.Instance.blankPos = randI;

@@ -15,4 +15,4 @@ MonoBehaviour:
   sentences:
   - It is locked.
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: 81a0f7ea6908f9f4d84c1a34160c050f, type: 3}

@@ -17,10 +17,10 @@ MonoBehaviour:
   - Did you see that?
   - What was that?
   - My grandfather used to sit there.
-  - What??? (Surprised and shocked)
+  - What???
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: 9f5e552cfab16ca4ab4ebac853a362a2, type: 3}
+  - {fileID: 8300000, guid: 121b83906d422524197e8ea5301ea400, type: 3}
+  - {fileID: 8300000, guid: 6f7fa4bb3c358ce4ea3b1f9a53907191, type: 3}
+  - {fileID: 8300000, guid: adf2b5434b8d7884ab8498211b7023e9, type: 3}
+  - {fileID: 8300000, guid: a1cbb6eb1c68aba4285ab3ba5b9559b1, type: 3}

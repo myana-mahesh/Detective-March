@@ -13,19 +13,18 @@ MonoBehaviour:
   m_Name: ExamineWalls
   m_EditorClassIdentifier: 
   sentences:
-  - 'Milly, are you scribbling all these things? '
+  - Milly, are you scribbling all these things?
   - No, I never noticed it.
-  - "That means you don\u2019t ever work in the kitchen"
-  - "You got me. (Chuckles)                                                                                                              
-    I always eat outside or at my boyfriend\u2019s house. "
-  - You have a boyfriend? (Shocked)
+  - "That means you don\u2019t ever work in the kitchen."
+  - "You got me. I always eat outside or at my boyfriend\u2019s house."
+  - You have a boyfriend?
   - "Why, you don\u2019t have one?"
-  - (Groans (in anger & jealousy))
+  - ...
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: 45cd9bb3edee5e843b3fdb857ff9115a, type: 3}
+  - {fileID: 8300000, guid: cd816156a7286a74b8a9e439bd8740ef, type: 3}
+  - {fileID: 8300000, guid: afa6b8872b7f08a46af1279c6063cd27, type: 3}
+  - {fileID: 8300000, guid: 25c1a5e83bde9e04fa80c4311b689c70, type: 3}
+  - {fileID: 8300000, guid: dd28c660a858e584e819c7bcf537bda0, type: 3}
+  - {fileID: 8300000, guid: 840bac286fd2f1440b08d184ae0aafe8, type: 3}
+  - {fileID: 8300000, guid: a3b690d9f604cbf4191e163fd531e840, type: 3}

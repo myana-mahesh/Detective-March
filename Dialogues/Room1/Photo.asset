@@ -15,4 +15,4 @@ MonoBehaviour:
   sentences:
   - ' He looks grumpy.'
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: 3470074c8b43ae144aefd379f9dda6c5, type: 3}

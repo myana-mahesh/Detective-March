@@ -15,6 +15,7 @@ public class CanAndAlbum : MonoBehaviour
         item.SetActive(true);
         item2.SetActive(true);
         hideItem.SetActive(false);
+        SoundManager.Instance.gameSounds[3].Play();
     }
 
 

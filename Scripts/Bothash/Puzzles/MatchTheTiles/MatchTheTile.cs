@@ -5,6 +5,8 @@ using UnityEngine;
 namespace bothash {
     public class MatchTheTile : MonoBehaviour {
         //public GameObject toPass;
+        public GameObject examineTiles;
+        public GameObject[] rewards;
         private GameObject first;
         private GameObject second;
         public bool firstNotPassed;
@@ -34,7 +36,8 @@ namespace bothash {
             }
         }
         void Update () {
-
+            if(closeExamine())
+            examineTiles.SetActive(false);
         }
         /*  
         public void passFirstData (GameObject firstToPass) {
@@ -45,11 +48,13 @@ namespace bothash {
             if (firstNotPassed) {
                 first = secondToPass;
                 firstNotPassed = false;
-                first.GetComponent<SpriteRenderer> ().enabled = true;
+                first.GetComponent<SpriteRenderer>().enabled = true;
+                SoundManager.Instance.gameSounds[6].Play();
             } else {
                 second = secondToPass;
                 firstNotPassed = true;
-                second.GetComponent<SpriteRenderer> ().enabled = true;
+                second.GetComponent<SpriteRenderer>().enabled = true;
+                SoundManager.Instance.gameSounds[6].Play();
                 check ();
             }
 
@@ -60,8 +65,12 @@ namespace bothash {
                 count += 1;
                 first.GetComponent<BoxCollider2D> ().enabled = false;
                 second.GetComponent<BoxCollider2D> ().enabled = false;
+
+                SoundManager.Instance.gameSounds[1].Play();
+
                 if (count == 14) {
                     Prize.SetActive (true);
+                    
                 }
                 Debug.Log ("match");
             } else {
@@ -72,9 +81,18 @@ namespace bothash {
         }
 
         IEnumerator waitFor3 () {
-            yield return new WaitForSeconds (0.15f);
+            yield return new WaitForSeconds (0.1f);
             first.GetComponent<SpriteRenderer> ().enabled = false;
             second.GetComponent<SpriteRenderer> ().enabled = false;
+        }
+        bool closeExamine(){
+            foreach (GameObject item in rewards)
+            {
+                if(item.activeSelf){
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

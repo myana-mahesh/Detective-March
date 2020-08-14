@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: AntiqueBox
   m_EditorClassIdentifier: 
   sentences:
-  - "It\u2019s a puzzle. Some pieces are missing though. \t                                                                    
-    I will keep looking around. "
+  - "It\u2019s a puzzle."
+  - Some pieces are missing though.
+  - I will keep looking around.
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: a5a2ea23056b9614f8321195ef6573fe, type: 3}
+  - {fileID: 8300000, guid: b27ce77b42c073347ab94a1278025227, type: 3}
+  - {fileID: 8300000, guid: 4f98131db852d724a980209e8ec5b0cf, type: 3}

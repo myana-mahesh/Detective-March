@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: AnimalHeadExamine
   m_EditorClassIdentifier: 
   sentences:
-  - " It looks like Mr. Peter was a great hunter. Some of the eyes are missing though.
-    \t              Who could steal such things? "
+  - It looks like Mr. Peter was a great hunter.
+  - Some of the eyes are missing though.
+  - Who could steal such things?
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: 2122b7a3e5ef1894f9d38ae807ec1d6c, type: 3}
+  - {fileID: 8300000, guid: 4157c78d8088e664fa630e191acf085e, type: 3}
+  - {fileID: 8300000, guid: 16c3dbeaa6b151442bf496837fad57a0, type: 3}

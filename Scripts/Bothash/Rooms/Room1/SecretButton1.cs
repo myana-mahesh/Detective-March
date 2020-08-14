@@ -26,6 +26,15 @@ public class SecretButton1 : MonoBehaviour
                 IamHit=false;
             }
         } */
+        SoundManager.Instance.gameSounds[5].Play();
+        gameObject.GetComponent<Animator>().enabled = true;
         SecretKeyManager.Instance.passFirstData(Time.time);
+        StartCoroutine(waitFor3());
+
+    }
+    IEnumerator waitFor3(){
+        yield return new WaitForSeconds(3);
+        gameObject.GetComponent<Animator>().enabled=false;
+        gameObject.GetComponent<SpriteRenderer>().color=new Color(255,255,255,255);
     }
 }

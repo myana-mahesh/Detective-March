@@ -65,6 +65,7 @@ public class Navigate : MonoBehaviour {
 
 	private void OnMouseDown () {
 		Debug.Log ("hit");
+		SoundManager.Instance.gameSounds[0].Play();
 		currRoom.SetActive (false);
 		nextRoom.SetActive (true);
 	}

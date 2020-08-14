@@ -11,6 +11,11 @@ namespace bothash {
         private bool _dragDone = false;
         private Vector3 PositionAlwaysTo;
 
+        public string[] sentences;
+        public GameObject[] character;
+        public AudioClip[] Audios;
+
+        
         // Update is called once per frame
         void Awake () {
             PositionAlwaysTo = this.transform.position;
@@ -48,16 +53,30 @@ namespace bothash {
             if (hit.collider.gameObject.GetComponent<Clickable> () != null) {
                 IEnumerator waitForFlash () {
                     yield return new WaitForSeconds (0.8f);
-                    hit.collider.gameObject.GetComponent<Clickable> ().startClickDialogues ();
+                    if (!PlayerPrefs.HasKey(hit.collider.gameObject.name))
+                    {
+                        hit.collider.gameObject.GetComponent<Clickable> ().startClickDialogues ();
+                        PlayerPrefs.SetInt(hit.collider.gameObject.name,1);
+                    }
+                    
                 }
                 if (hit.collider.gameObject.GetComponent<Clickable> ().isClickable) {
-                    Debug.Log (hit.collider.gameObject.name + "clicked");
-                    hit.collider.gameObject.GetComponent<Clickable> ().albumRefference.SetActive (true);
-
-                    CameraFlash.SetActive (true);
+                    if(hit.collider.gameObject.GetComponent<Clickable> ().albumRefference.activeSelf){
+                        bothash.DialogueM.Instance.sentence = sentences;
+                        bothash.DialogueM.Instance.Avatar = character;
+                        bothash.DialogueM.Instance.Audio = Audios;
+                        bothash.DialogueM.Instance.startDialogue ();
+                    }
+                    else{
+                        Debug.Log (hit.collider.gameObject.name + "clicked");
+                        hit.collider.gameObject.GetComponent<Clickable> ().albumRefference.SetActive (true);
+                        CameraFlash.SetActive (true);
+                        disableAnimalExamine.Instance.check();
+                        }
 
                 }
                 if (hit.collider.gameObject.GetComponent<Clickable> ().haveDilaogues) {
+                    
                     StartCoroutine (waitForFlash ());
 
                 }

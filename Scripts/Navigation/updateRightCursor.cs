@@ -39,6 +39,7 @@ public class updateRightCursor : MonoBehaviour {
 
 	IEnumerator WaitFor3Seconds() {
 		yield return new WaitForSeconds(duration);
+		SoundManager.Instance.gameSounds[0].Play();
         myRightScreen.SetActive(value: true);
 		myCurrentScreen.SetActive(value: false);
 		dialogues.SetActive(value: false);

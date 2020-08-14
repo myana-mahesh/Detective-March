@@ -21,6 +21,7 @@ public class NavDown : MonoBehaviour {
     private void OnMouseDown () {
         if (DedicatedRoomManager.RInstance.checkStatus1 ()) {
             Debug.Log ("hit");
+            SoundManager.Instance.gameSounds[0].Play();
             cuurRoom.SetActive (false);
             nextRoom.SetActive (true);
         }

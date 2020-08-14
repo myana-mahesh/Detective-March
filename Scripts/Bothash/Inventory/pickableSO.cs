@@ -34,6 +34,7 @@ public class pickableSO : MonoBehaviour
 
         bothash.InventoryManager.instance.addToInventory(item);
         this.gameObject.SetActive(false);
+        SoundManager.Instance.gameSounds[3].Play();
     }
 
 

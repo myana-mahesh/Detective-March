@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SecretButtons : MonoBehaviour
 {
-    private bool IamHit;
+    
     // Start is called before the first frame update
     void Start()
     {   
-        IamHit=false;
+       
     }
 
     // Update is called once per frame
@@ -27,7 +27,15 @@ public class SecretButtons : MonoBehaviour
                 IamHit=false;
             }
         } */
-        
-        SecretKeyManager.Instance.passData(Time.time);
+        SoundManager.Instance.gameSounds[5].Play();
+        gameObject.GetComponent<Animator>().enabled = true;
+        SecretKeyManager.Instance.passSecondData(Time.time);
+        StartCoroutine(waitFor3());
+
+    }
+    IEnumerator waitFor3(){
+        yield return new WaitForSeconds(3);
+        gameObject.GetComponent<Animator>().enabled=false;
+        gameObject.GetComponent<SpriteRenderer>().color=new Color(255,255,255,255);
     }
 }

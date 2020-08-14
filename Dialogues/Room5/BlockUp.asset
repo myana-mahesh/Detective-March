@@ -15,4 +15,4 @@ MonoBehaviour:
   sentences:
   - I think you should search this area first.
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: cb119c904febab2499da0c0fe226206a, type: 3}

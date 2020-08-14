@@ -14,6 +14,7 @@ namespace bothash {
         public GameObject blankTile;
         public int blankPos;
         public GameObject OpenBox;
+        public GameObject puzzleBox;
         public static Jigsaw Instance { get; set; }
 
         // Start is called before the first frame update
@@ -28,7 +29,7 @@ namespace bothash {
         }
 
         void Start () {
-            blankPos = 14;
+            blankPos = 15;
             for (int i = 0; i < tilesPos.Count; i++) {
                 tilesPosOrg.Add (tilesPos[i]);
             }
@@ -53,10 +54,12 @@ namespace bothash {
             return true;
         }
         public void ActivateBox () {
-            OpenBox.SetActive (true);
+            gameObject.GetComponent<Animator>().enabled=true;
+            StartCoroutine(waitForAnim());
+            
         }
         public void StartJigsaw () {
-            blankPos = 14;
+            blankPos = 15;
             for (int i = 0; i < tilesPos.Count; i++) {
                 tilesPosOrg.Add (tilesPos[i]);
             }
@@ -68,6 +71,11 @@ namespace bothash {
                 posAfterRandom[i] = tilesPosOrg.IndexOf (tilesPos[pos]);
                 tilesPos.RemoveAt (pos);
             }
+        }
+        IEnumerator waitForAnim(){
+            yield return new WaitForSeconds(0.4f);
+            OpenBox.SetActive (true);
+            puzzleBox.SetActive(false);
         }
     }
 }

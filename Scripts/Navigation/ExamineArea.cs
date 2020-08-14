@@ -66,14 +66,17 @@ public class ExamineArea : MonoBehaviour
 
     public GameObject nextRoom;
     public GameObject currRoom;
+    public GameObject objtoshow;
     private void OnMouseEnter() {
         MousePointer.Instance.SetExaminePointer();
     }
     private void OnMouseDown() {
 
-
+        SoundManager.Instance.gameSounds[0].Play();
         currRoom.SetActive(false);
         nextRoom.SetActive(true);
+        if(objtoshow)
+        objtoshow.SetActive(true);
     }
     private void OnMouseExit() {
         MousePointer.Instance.SetNormalPointer();

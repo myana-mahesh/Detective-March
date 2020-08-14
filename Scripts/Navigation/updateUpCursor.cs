@@ -42,6 +42,7 @@ public class updateUpCursor : MonoBehaviour
     IEnumerator WaitFor3Seconds()
     {
         yield return new WaitForSeconds(duration);
+        SoundManager.Instance.gameSounds[0].Play();
         myUpScreen.SetActive(value: true);
         myCurrentScreen.SetActive(value: false);
         dialogues.SetActive(value: false);

@@ -11,6 +11,7 @@ public class BackScript : MonoBehaviour
 	{
 //		SoundManager.Instance.gameSounds[2].Play();
 		myCurrentScreen.SetActive(false);
+		SoundManager.Instance.gameSounds[0].Play();
 		// todo drag myinventory here 
 //		myInventory.SetActive(true);
 	}
