@@ -10,7 +10,7 @@ public class SimpleSpriteActivateOnce : MonoBehaviour
     void Start()
     {
         string spName = GetComponent<SpriteRenderer>().sprite.name;
-        if (PlayerPrefs.HasKey(spName) && (PlayerPrefs.GetString(spName) == "showed_once"))
+        if (FileBasedPrefs.HasKey(spName) && (FileBasedPrefs.GetString(spName) == "showed_once"))
         {
             GetComponent<SpriteRenderer>().enabled = true;
             if (GetComponent<BoxCollider>() != null && initialEnableBoxCollider)

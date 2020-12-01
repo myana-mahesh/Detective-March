@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: afterPlantInspect
+  m_EditorClassIdentifier: 
+  sentences:
+  - Milly, do you have a small shovel?
+  - Can I ask why?
+  - I want to dig out the plant on the window.
+  - Oh! You are so sweet.
+  - You will sow another one for me?
+  - No, I just want to dig it.
+  - I think something is hidden there.
+  - Ohhh. Let me see.
+  - Will it work?
+  Audios:
+  - {fileID: 8300000, guid: fff69dd8df38faf4e9cf1582cf2d3da4, type: 3}
+  - {fileID: 8300000, guid: 6d9b4b65185e2364692243c01a28abf8, type: 3}
+  - {fileID: 8300000, guid: 72b81b805e0ec984c96d7b3ce929c270, type: 3}
+  - {fileID: 8300000, guid: af24795ac681e9b49b9ad32967e6629f, type: 3}
+  - {fileID: 8300000, guid: c5e3f4f1bd6df2c47ae342b008890566, type: 3}
+  - {fileID: 8300000, guid: 917b179eec92654438ff5b3a73bda2cd, type: 3}
+  - {fileID: 8300000, guid: 7900a2b954f6f8a4cb7b7c3073cb908b, type: 3}
+  - {fileID: 8300000, guid: 17c0694dd4f31cd43bc436cb8cd8f9dd, type: 3}
+  - {fileID: 8300000, guid: d9a327fc35dd53d4fb094d631d049261, type: 3}

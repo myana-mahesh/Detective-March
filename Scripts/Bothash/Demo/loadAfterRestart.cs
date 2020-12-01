@@ -17,12 +17,12 @@ public class loadAfterRestart : MonoBehaviour
         
     }
     public void startManagers()
-    {   if (PlayerPrefs.HasKey("restarted"))
+    {   /* if (FileBasedPrefs.HasKey("restarted"))
         {
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene("GroundFloor");
-            PlayerPrefs.DeleteKey("restarted");
-        }
+            FileBasedPrefs.DeleteKey("restarted");
+        } */
          
     } 
 }

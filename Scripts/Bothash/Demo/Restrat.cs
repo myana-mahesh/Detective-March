@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO; 
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
+using Steamworks;
 
 public class Restrat : MonoBehaviour
-{   public GameObject Rooms;
-    public GameObject mainScreen;
-    public GameObject grounFloor;
-    public GameObject[] allRooms;
+{   
+    /* public GameObject mainScreen;
+    
+    public GameObject demoScene; */
     public GameObject[] managers;
-    public ObjectSavingSo objectSaving;
-    public bothash.PlayerWholeInventory InventorySO;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -24,16 +24,26 @@ public class Restrat : MonoBehaviour
     {
         
     }
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
        
-        mainScreen.SetActive(true);
-        PlayerPrefs.DeleteAll();
+        //mainScreen.SetActive(true);
         
+        
+
+        //SteamUserStats.ResetAllStats(true);
+
+        FileBasedPrefs.DeleteAll();
+
+        foreach(string achname in bothash.AlbumManager.Instance.albumSO.ACHNAMES)
+        {
+            FileBasedPrefs.SetInt(achname, 1);
+        }
+
         foreach (GameObject manager in managers)
         {
-           Destroy(manager);
-        } 
+            Destroy(manager);
+        }
 
         if (Directory.Exists(Application.persistentDataPath + "/GameData"))  
         {  
@@ -54,7 +64,8 @@ public class Restrat : MonoBehaviour
             Directory.Delete(Application.persistentDataPath + "/AlbumData",true);  
         }
 
-        PlayerPrefs.SetInt("restarted",1);
-           
+        
+        //FileBasedPrefs.SetInt("_restarted_",1);
+        SceneManager.LoadScene(0);
     }
 }

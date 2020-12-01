@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: checkPlant
+  m_EditorClassIdentifier: 
+  sentences:
+  - The plant has dried out but still the soil is loose.
+  - I am sure someone has dug it up.
+  Audios:
+  - {fileID: 8300000, guid: ca5bb16729de4344a84d926e108f4335, type: 3}
+  - {fileID: 8300000, guid: 5dda3496b52743c48a30339ab906900f, type: 3}

@@ -15,6 +15,8 @@ public class SecretKeyManager : MonoBehaviour
     public bool firstPassed,secondPassed;
     public GameObject navToTop;
     public GameObject examineTop;
+
+    public string SteamACH = "Keen Eye";
     public static  SecretKeyManager Instance{get;private set;}
     // Start is called before the first frame update
     void Awake()
@@ -45,7 +47,11 @@ public class SecretKeyManager : MonoBehaviour
         firstPassed=true;
         if(firstPassed && secondPassed){
             if(Math.Abs(secondButton-firstButton)<=3 ){
+                
                 Drawer.SetActive(true);
+                SteamHandler.instance.SetAch(SteamACH);
+                secretButton.SetActive(false);
+                secretButton1.SetActive(false);
                 Room1.SetActive(false);
                 navToTop.SetActive(true);
                 examineTop.SetActive(false);
@@ -70,6 +76,9 @@ public class SecretKeyManager : MonoBehaviour
         if(firstPassed && secondPassed){
             if(Math.Abs(secondButton-firstButton)<=3 ){
                 Drawer.SetActive(true);
+                SteamHandler.instance.SetAch(SteamACH);
+                secretButton.SetActive(false);
+                secretButton1.SetActive(false);
                 Room1.SetActive(false);
                 navToTop.SetActive(true);
                 examineTop.SetActive(false);

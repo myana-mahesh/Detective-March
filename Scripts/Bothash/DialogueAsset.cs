@@ -11,6 +11,7 @@ namespace bothash {
         public GameObject[] character;
         public DIalogue Dialogues;
         public DIalogue blockDialogues;
+        public GameObject blockscreen;
 
         public GameObject[] blockAvatar;
         public enum statusCheck {
@@ -20,14 +21,14 @@ namespace bothash {
 
         void Start () {
             if (onloadDialogue) {
-                /* if (PlayerPrefs.GetInt (this.gameObject.name) != 1) {
+                /* if (FileBasedPrefs.GetInt (this.gameObject.name) != 1) {
                     DialogueM.Instance.sentence = Dialogues.sentences;
                     DialogueM.Instance.Avatar = character;
                     DialogueM.Instance.Audio = Dialogues.Audios;
                     DialogueM.Instance.startDialogue ();
                 } else {
-                    if (PlayerPrefs.GetInt (this.gameObject.name, 5) == 5) {
-                        PlayerPrefs.SetInt (this.gameObject.name, 1);
+                    if (FileBasedPrefs.GetInt (this.gameObject.name, 5) == 5) {
+                        FileBasedPrefs.SetInt (this.gameObject.name, 1);
                         DialogueM.Instance.sentence = Dialogues.sentences;
                         DialogueM.Instance.Avatar = character;
                         DialogueM.Instance.Audio = Dialogues.Audios;
@@ -37,15 +38,25 @@ namespace bothash {
                     }
                 } */
                 if(this.gameObject.name=="Kitchen"){
+                    
                     StartCoroutine(waitForchair());
                 }
-                else if(!PlayerPrefs.HasKey (this.gameObject.name)) {
-                    PlayerPrefs.SetInt (this.gameObject.name, 1);
+                else if(this.gameObject.name=="Room31"){
+                    StartCoroutine(waitForComputer());
+                }
+                else if(this.gameObject.name=="DarkLivingRoom"){
+                    StartCoroutine(waitForAnim());
+                }
+                
+                else if(!FileBasedPrefs.HasKey (this.gameObject.name) ) {
+                    FileBasedPrefs.SetInt (this.gameObject.name, 1);
                     DialogueM.Instance.sentence = Dialogues.sentences;
                     DialogueM.Instance.Avatar = character;
                     DialogueM.Instance.Audio = Dialogues.Audios;
                     DialogueM.Instance.startDialogue ();
                 }
+                
+                
 
             }
         }
@@ -60,6 +71,7 @@ namespace bothash {
                 DedicatedRoomManager.RInstance.RemoveItemHit (this.gameObject);
             }
             if (!onloadDialogue) {
+                
                 DialogueM.Instance.sentence = Dialogues.sentences;
                 DialogueM.Instance.Avatar = character;
                 DialogueM.Instance.Audio = Dialogues.Audios;
@@ -68,9 +80,37 @@ namespace bothash {
 
         }
         IEnumerator waitForchair(){
-            yield return new WaitForSeconds(2.2f);
-            if (!PlayerPrefs.HasKey (this.gameObject.name)) {
-                    PlayerPrefs.SetInt (this.gameObject.name, 1);
+            
+            if (!FileBasedPrefs.HasKey (this.gameObject.name)) {
+                    FileBasedPrefs.SetInt (this.gameObject.name, 1);
+                    blockscreen.SetActive(true);
+                    yield return new WaitForSeconds(2.2f);
+                    DialogueM.Instance.sentence = Dialogues.sentences;
+                    DialogueM.Instance.Avatar = character;
+                    DialogueM.Instance.Audio = Dialogues.Audios;
+                    DialogueM.Instance.startDialogue ();
+                }
+        }
+
+        IEnumerator waitForComputer(){
+            
+            if (!FileBasedPrefs.HasKey (this.gameObject.name)) {
+                    FileBasedPrefs.SetInt (this.gameObject.name, 1);
+                    //blockscreen.SetActive(true);
+                    yield return new WaitForSeconds(9.2f);
+                    DialogueM.Instance.sentence = Dialogues.sentences;
+                    DialogueM.Instance.Avatar = character;
+                    DialogueM.Instance.Audio = Dialogues.Audios;
+                    DialogueM.Instance.startDialogue ();
+                }
+        }
+
+        IEnumerator waitForAnim(){
+            
+            if (!FileBasedPrefs.HasKey (this.gameObject.name)) {
+                    FileBasedPrefs.SetInt (this.gameObject.name, 1);
+                    //blockscreen.SetActive(true);
+                    yield return new WaitForSeconds(2.2f);
                     DialogueM.Instance.sentence = Dialogues.sentences;
                     DialogueM.Instance.Avatar = character;
                     DialogueM.Instance.Audio = Dialogues.Audios;

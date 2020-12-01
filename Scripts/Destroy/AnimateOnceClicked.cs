@@ -14,7 +14,7 @@ public class AnimateOnceClicked : MonoBehaviour
 
     public void PlayVent()
     {
-        if (PlayerPrefs.HasKey(gameObject.name))
+        if (FileBasedPrefs.HasKey(gameObject.name))
         {
             gameObject.GetComponent<Animator>().enabled = false;
             return;
@@ -23,7 +23,7 @@ public class AnimateOnceClicked : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                PlayerPrefs.SetString(gameObject.name, "showed_once");
+                FileBasedPrefs.SetString(gameObject.name, "showed_once");
                 if (GetComponent<Animator>() != null)
                     GetComponent<Animator>().enabled = true;
                 Debug.LogError("Destroy obj");

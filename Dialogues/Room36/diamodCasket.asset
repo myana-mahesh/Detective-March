@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: diamodCasket
+  m_EditorClassIdentifier: 
+  sentences:
+  - Some parts are missing.
+  - Oh no.
+  - "Don\u2019t get upset. I will find them."
+  - We have come a long way.
+  - There is no turning back now.
+  - You sound like a true detective.
+  - I am a true detective.
+  - "Ah... hmmm\u2026"
+  Audios:
+  - {fileID: 8300000, guid: fefebe19170477c45a86e7db81132d06, type: 3}
+  - {fileID: 8300000, guid: eff3ae3df94eb0842bfb652340646ac8, type: 3}
+  - {fileID: 8300000, guid: 425c0449eb5a8a244af0cfecb769ffd3, type: 3}
+  - {fileID: 8300000, guid: 46f0f4655278c6546bacb87e21711039, type: 3}
+  - {fileID: 8300000, guid: f3c7a17d6ed03e344be7828e6eaa71de, type: 3}
+  - {fileID: 8300000, guid: 3fc786fe776932b4a89135f27627058c, type: 3}
+  - {fileID: 8300000, guid: e78f4a4591b90a04faf245df3a1270cf, type: 3}
+  - {fileID: 8300000, guid: 3e080fcd11fe94945b3d2db9dd42f4ad, type: 3}

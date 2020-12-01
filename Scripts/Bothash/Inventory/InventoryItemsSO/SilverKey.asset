@@ -20,5 +20,8 @@ MonoBehaviour:
   isMechanicTools: 0
   MechanicsDropObjectName: 
   ToolName: 
-  isDropAble: 0
-  DropObjectName: 
+  isDropAble: 1
+  DropObjectName: SilverChest
+  hideSelf: 0
+  isSimpleDrop: 0
+  simpleDropObjectName: 

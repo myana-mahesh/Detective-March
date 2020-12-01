@@ -8,17 +8,7 @@ public class disableChef : MonoBehaviour
     public GameObject albumRefernce;
     public GameObject[] examineList;
     
-    public static disableChef Instance { get; private set; }
-    void Awake () 
-    {
-        if (Instance == null) {
-                Instance = this;
-                DontDestroyOnLoad (gameObject);
-            } 
-        else {
-            Destroy (gameObject);
-        }
-    }
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +22,7 @@ public class disableChef : MonoBehaviour
     }
     public void check(){
         if(stopForPhoto){
-            if (albumRefernce.activeSelf && PlayerPrefs.HasKey("chefClicked"))
+            if (albumRefernce.activeSelf && FileBasedPrefs.HasKey("chefClicked"))
             {
                 foreach (GameObject item in examineList)
                 {
@@ -40,7 +30,7 @@ public class disableChef : MonoBehaviour
                 }
             }
         }
-        else
+        else if(FileBasedPrefs.HasKey("chefClicked"))
         {
             foreach (GameObject item in examineList){
                 item.SetActive(false);

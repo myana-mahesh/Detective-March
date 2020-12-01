@@ -17,9 +17,11 @@ namespace bothash {
         public GameObject BlockScreen;
         public GameObject CabinetKey;
         public GameObject PP3;
+        public GameObject compass;
+        public GameObject knob;
         [SerializeField]
         private float typingSpeed = 0.125f;
-
+        public GameObject march; 
         private Coroutine _co;
         int i, j;
         // Start is called before the first frame update
@@ -81,20 +83,40 @@ namespace bothash {
                 Audio[i].Play(); */
 
             } else {
-                if (PlayerPrefs.HasKey ("clickedTaps") && PlayerPrefs.HasKey ("afterSink")) {
+                if (FileBasedPrefs.HasKey ("clickedTaps") && FileBasedPrefs.HasKey ("afterSink")) {
                     CabinetKey.SetActive (true);
-                    PlayerPrefs.DeleteKey ("clickedTaps");
-                    PlayerPrefs.DeleteKey ("afterSink");
-                    PlayerPrefs.SetInt ("keyDisplayed", 1);
+                    FileBasedPrefs.DeleteKey ("clickedTaps");
+                    FileBasedPrefs.DeleteKey ("afterSink");
+                    FileBasedPrefs.SetInt ("keyDisplayed", 1);
 
                 }
-                if (PlayerPrefs.HasKey ("PantingSolved") && PlayerPrefs.HasKey ("PantingSolvedNavigationDone")) {
+                else if (FileBasedPrefs.HasKey ("PantingSolved") && FileBasedPrefs.HasKey ("PantingSolvedNavigationDone")) {
                     PP3.SetActive (true);
-                    PlayerPrefs.DeleteKey ("PantingSolved");
-                    PlayerPrefs.DeleteKey ("PantingSolvedNavigationDone");
-                    PlayerPrefs.SetInt ("paintigOjectsPicked", 1);
+                    FileBasedPrefs.DeleteKey ("PantingSolved");
+                    FileBasedPrefs.DeleteKey ("PantingSolvedNavigationDone");
+                    FileBasedPrefs.SetInt ("paintigOjectsPicked", 1);
 
                 }
+                else if (FileBasedPrefs.HasKey("plantInspected") && !FileBasedPrefs.HasKey("compassCollected") && FileBasedPrefs.HasKey("compass"))   
+                {
+                 compass.SetActive(true);   
+                 FileBasedPrefs.SetInt("compassCollected",1);
+                }
+                else if(FileBasedPrefs.HasKey("GoldenKey") && !FileBasedPrefs.HasKey("knobCollected") ){
+                    FileBasedPrefs.SetInt("knobCollected",1);
+                    knob.SetActive(true);
+                }
+                else if(FileBasedPrefs.HasKey("BenardEntryDone") && !FileBasedPrefs.HasKey("UnfriendlyEncounter")){
+                    FileBasedPrefs.SetInt("UnfriendlyEncounter",1);
+                    SteamHandler.instance.SetAch("Unfriendly Encounter");
+                    Debug.Log("Unfriendly Encounter achievement done");
+                }
+                else if(FileBasedPrefs.HasKey("Room26")){
+                    SteamHandler.instance.SetAch("Spookify");
+                }
+                else if(FileBasedPrefs.HasKey("Room31")){
+                    //SteamHandler.instance.SetAch("Mystery Solved");
+                }               
                 Asource.Stop();
                 Asource.clip=null;
                 Avatar[j].SetActive (false);
@@ -102,6 +124,7 @@ namespace bothash {
                 BlockScreen.SetActive (false);
             }
         }
+        
     }
 
 }

@@ -19,7 +19,7 @@ public class checkScribble : MonoBehaviour
     {   
         
         
-        PlayerPrefs.SetInt("scribbleClicked",1);
+        FileBasedPrefs.SetInt("scribbleClicked",1);
         //disableSink.Instance.check();
     }
 }

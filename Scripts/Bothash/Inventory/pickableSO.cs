@@ -10,6 +10,11 @@ public class pickableSO : MonoBehaviour
 
     public bothash.InventoryItemSO item;
 
+    [Header("IF WANT TO ACTIVATE / DEACTIVATE SOME OTHER OBJECTS ON PICKUP OF THIS OBJECT")]
+    public bool isActivateOther=false;
+
+    public bool Activate;
+    public GameObject otherObject;
 
 
     #endregion
@@ -20,6 +25,10 @@ public class pickableSO : MonoBehaviour
     void OnMouseDown()
     {
         pickSO();
+        if (isActivateOther)
+        {
+            otherObject.SetActive(Activate);
+        }
     }
 
 

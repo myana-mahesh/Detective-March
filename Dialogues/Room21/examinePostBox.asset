@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: examinePostBox
+  m_EditorClassIdentifier: 
+  sentences:
+  - What is this, Milly?
+  - Oh! My grandpa gave this to me and said it is quite valuable.
+  - "Who\u2019s going to believe that?"
+  Audios:
+  - {fileID: 8300000, guid: ec7985fa770b4be49a37a504d2ab6b0f, type: 3}
+  - {fileID: 8300000, guid: e2f1ad35fd0a69b4489ed647a6bd84ca, type: 3}
+  - {fileID: 8300000, guid: 3941e1d0babfbe745b9c02ec66eb5c0e, type: 3}

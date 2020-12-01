@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: stamPad
+  m_EditorClassIdentifier: 
+  sentences:
+  - Where is the stamp?
+  - "I don\u2019t know."
+  - You lost it?
+  - No. It was without stamp.
+  - No one will accept a letter without stamp.
+  - "It\u2019s just a show piece, isn\u2019t it?"
+  Audios:
+  - {fileID: 8300000, guid: c0e1837bf8516634e9c62f0efe36e0d4, type: 3}
+  - {fileID: 8300000, guid: f598dae2c189e9344bb4c4db6cee4e9c, type: 3}
+  - {fileID: 8300000, guid: 84f2a331243cfbe408c0a9ea09b7b350, type: 3}
+  - {fileID: 8300000, guid: efc89052e8d04a24ebc25c4ff0247383, type: 3}
+  - {fileID: 8300000, guid: c239b89d2befa2a488c78256ceadf15d, type: 3}
+  - {fileID: 8300000, guid: a73c8905e53050341859ec49a39ae9da, type: 3}

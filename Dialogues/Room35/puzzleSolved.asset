@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: puzzleSolved
+  m_EditorClassIdentifier: 
+  sentences:
+  - Bravo, March.
+  - Now you know how good I am.
+  - "Don\u2019t just celebrate yet. We still need to get the will."
+  - "Let\u2019s get in there."
+  Audios:
+  - {fileID: 8300000, guid: cdfeeadaa74c6d94580fe0d4f3f5deaa, type: 3}
+  - {fileID: 8300000, guid: 0e610145192674747ad58eef1da42e23, type: 3}
+  - {fileID: 8300000, guid: 9c35e7f80d8b01542bd2b8e48b2d47f7, type: 3}
+  - {fileID: 8300000, guid: f3adead1914f6df4d9d21c81736e2d80, type: 3}

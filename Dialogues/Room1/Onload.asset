@@ -14,84 +14,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - Finally, I got my first case. Soon, my dream to become famous detective will
-    come true. But how much should I charge Milly?
-  - "Oh, March! Thank God you\u2019ve arrived. I\u2019m so relieved. (Depressed)"
+    come true.
+  - But how much should I charge Milly?
+  - "Oh, March! Thank God you\u2019ve arrived. I\u2019m so relieved."
   - What happened? You look depressed.
-  - "Many things have changed since my grandfather passed away\u2026 "
+  - "Many things have changed since my grandfather passed away\u2026"
   - "Mr. Peter Robinson, right? I\u2019m so sorry. When did this happen?"
-  - 'Last year, he died of a heart attack. '
-  - ' A heart attack? '
-  - Yes. This was a year ago. We all went to the nearby park while Grandpa stayed
-    at home. He said he had some work to do on the computer.
-  - " But when we came back, we found him dead, right on his computer table. \t                 
-    A few months after his death, strange things started to happen. "
-  - "Ahh\u2026 strange things? (Little worried as she is scared of ghosts)"
+  - Last year, he died of a heart attack.
+  - A heart attack?
+  - Yes. This was a year ago.
+  - We all went to the nearby park while Grandpa stayed at home. He said he had some
+    work to do on the computer.
+  - But when we came back, we found him dead, right on his computer table.
+  - A few months after his death, strange things started to happen.
+  - "Ahh\u2026 strange things?"
   - Creepy noises in the night, moving furniture, objects went missing. And an apparition.
   - "You mean a g\u2026 ghost?"
-  - Yes, a ghost of my grandfather. Some family members have seen him
+  - Yes, a ghost of my grandfather. Some family members have seen him.
   - So why did you call me?
-  - "You are a detective, that\u2019s why. "
-  - "But I am not good with ghosts. I\u2019m totally afraid of them. \t                                                                                    
-    I\u2019ll just be going back home, now. "
+  - "You are a detective, that\u2019s why."
+  - "But I am not good with ghosts. I\u2019m totally afraid of them."
+  - "I\u2019ll just be going back home, now."
   - "You are not. Don\u2019t forget why your parents gave you this name."
-  - "I know, so I can always move forward and never look back. \t                                                             
-    That\u2019s what I am doing. I will not look back because I don\u2019t want to
-    see a ghost behind me! "
-  - "I know you desperately need a case\u2026 and here is one. \tI will pay you good
-    amount "
-  - " Well\u2026 you\u2019ve got my attention. How much?"
-  - "Hmmm\u2026 a ticket to local circus"
+  - I know, so I can always move forward and never look back.
+  - "That\u2019s what I am doing. I will not look back because I don\u2019t want
+    to see a ghost behind me!"
+  - "I know you desperately need a case\u2026 and here is one."
+  - I will pay you good amount.
+  - "Well\u2026 you\u2019ve got my attention. How much?"
+  - "Hmmm\u2026 a ticket to the local circus."
   - "What? I\u2019ve been there couple of times already anyway."
   - "I know, but I had one extr\u2026 I mean, ahhh\u2026 I\u2026 bought this just
-    for you.  \t              Now, please concentrate on the case. "
-  - " Hmmm\u2026 Where is the rest of your family? "
-  - 'They all moved. Nobody wants to stay in the haunted house. '
+    for you."
+  - Now, please concentrate on the case.
+  - "Hmmm\u2026 Where is the rest of your family?"
+  - They all moved. Nobody wants to stay in the haunted house.
   - Me too! But why are you here?
-  - 'I stayed here because of the will. The will is missing.                                                           
-    My grandfather used to keep it in his safe but now it is not there. '
-  - ' You mean someone has stolen it'
-  - 'No, I think my grandfather has hidden it somewhere else. '
+  - I stayed here because of the will.
+  - The will is missing. My grandfather used to keep it in his safe but now it is
+    not there.
+  - You mean someone has stolen it.
+  - No, I think my grandfather has hidden it somewhere else.
   - And you want it back, right?
-  - 'Of course. My uncle, Mr. Barnard has a will which mentions this house now belongs
-    to him. But why would my grandfather give his property to Mr. Bernard, his nephew,
-    instead of giving it to his legal heir who is my mom? '
-  - "I want the original will back in my possession. I searched the whole house but
-    I haven\u2019t been able to find it anywhere. Please help me March. You are my
-    last hope. "
+  - Of course. My uncle, Mr. Barnard has a will which mentions this house now belongs
+    to him.
+  - But why would my grandfather give his property to Mr. Bernard, his nephew, instead
+    of giving it to his legal heir who is my mom?
+  - I want the original will back in my possession.
+  - "I searched the whole house but I haven\u2019t been able to find it anywhere."
+  - Please help me March. You are my last hope.
   - Alright, you can count on me.
-  - 'I can use my camera on certain areas to get more information about them. Let
-    me try dragging & dropping it on the fireplace. '
+  - I can use my camera on certain areas to get more information about them.
+  - Let me try dragging & dropping it on the fireplace.
   Audios:
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: 50cbee2a105ed3747bd13106d559aeb3, type: 3}
+  - {fileID: 8300000, guid: be4c695090ed597479b87cee9276b410, type: 3}
+  - {fileID: 8300000, guid: e0e916a2b4a9ff541bab5366eae29ea8, type: 3}
+  - {fileID: 8300000, guid: e65acec242bc03a49920accbc6a8552a, type: 3}
+  - {fileID: 8300000, guid: 77bbfb0a124ebca49af12c879bfd9cb0, type: 3}
+  - {fileID: 8300000, guid: 3de24450033e1de4f993042aa6f9b255, type: 3}
+  - {fileID: 8300000, guid: 9b705908cc9557b4eb3c288f9dcdad4b, type: 3}
+  - {fileID: 8300000, guid: 1347ec6ef26d6724dab2e6b798e63ac5, type: 3}
+  - {fileID: 8300000, guid: 7153868f6ad1442409a72614e362b0e6, type: 3}
+  - {fileID: 8300000, guid: e6dbdc8f4d7dae44e8f45bc4bfbde2b2, type: 3}
+  - {fileID: 8300000, guid: 03c2a83196e7ebd41af6be2658257ec6, type: 3}
+  - {fileID: 8300000, guid: bdccdce487028ae438b050ec76ed3b32, type: 3}
+  - {fileID: 8300000, guid: 2fd76fcf50d2521488f3c8874a68fa0b, type: 3}
+  - {fileID: 8300000, guid: 19b17544f7e6ff946b80774ecbf8b56e, type: 3}
+  - {fileID: 8300000, guid: bd3ba574660f4a94089a8487eacd756b, type: 3}
+  - {fileID: 8300000, guid: f1ed6b7d124860642bde04b14e4704b3, type: 3}
+  - {fileID: 8300000, guid: cbd8263224c21a942b23faca5a06180b, type: 3}
+  - {fileID: 8300000, guid: 01b8831d63f482e4a91cb523dec96a52, type: 3}
+  - {fileID: 8300000, guid: 43b5f614c4492044ca72d17dabecac85, type: 3}
+  - {fileID: 8300000, guid: 6ce288e3e3880bf47b83e5a4df9b3aec, type: 3}
+  - {fileID: 8300000, guid: daeaaf65c35ab94478e8fed7353b463c, type: 3}
+  - {fileID: 8300000, guid: e7bc8abc3879acb4e82e709b0c39983f, type: 3}
+  - {fileID: 8300000, guid: d331d52ad54ac194abf340e37619e677, type: 3}
+  - {fileID: 8300000, guid: 5fed2676e16bfcf47a7ace75565c9588, type: 3}
+  - {fileID: 8300000, guid: 4bf3a08b653f60a40b1929da7fc4211e, type: 3}
+  - {fileID: 8300000, guid: 6d5e05efb0d8d2142b15440d5b254ccc, type: 3}
+  - {fileID: 8300000, guid: 4d57224dc7fdd8748ab25ee82f424d90, type: 3}
+  - {fileID: 8300000, guid: 9309072b9759eb347a8b65bd873aa50d, type: 3}
+  - {fileID: 8300000, guid: 528f090cf9bf04748a8fc27d98dfda2a, type: 3}
+  - {fileID: 8300000, guid: 1deca03a399af1142b6054149771d670, type: 3}
+  - {fileID: 8300000, guid: 7ce1bb9d06081e74badaadb1fadff3a3, type: 3}
+  - {fileID: 8300000, guid: b586b0ec701c22c4d903cbeadf3173e7, type: 3}
+  - {fileID: 8300000, guid: 29aec514376250c4c9da64d488ea6a50, type: 3}
+  - {fileID: 8300000, guid: 4b50294e7b5d3fb42ad016eae3b51162, type: 3}
+  - {fileID: 8300000, guid: 8e747e6c33bc50c4883044b85954853e, type: 3}
+  - {fileID: 8300000, guid: 3bf8d729c03582841a289f0e63a3c42f, type: 3}
+  - {fileID: 8300000, guid: e0491e775072b2e428a8962a02b976e9, type: 3}
+  - {fileID: 8300000, guid: 61274be649c600a4c805d29b706678cc, type: 3}
+  - {fileID: 8300000, guid: b3d2a01ef6c292941bff73a77f51b1aa, type: 3}
+  - {fileID: 8300000, guid: 60032f53dcd026946a97818da8c11859, type: 3}
+  - {fileID: 8300000, guid: d87357662e59afc49b2e5b1d2e379db3, type: 3}
+  - {fileID: 8300000, guid: 8ed04eaf439fd7d45a502a22aa99b9c8, type: 3}
+  - {fileID: 8300000, guid: 29e80ceb6af08d945b0e89155e100952, type: 3}
+  - {fileID: 8300000, guid: 7cacdb09e779ed94fb52d47bd8a330e8, type: 3}
+  - {fileID: 8300000, guid: a2d80eb724ff2b04daaa9425fc4f9496, type: 3}
+  - {fileID: 8300000, guid: 199cc34218db8ad4190618fc2564a1f0, type: 3}

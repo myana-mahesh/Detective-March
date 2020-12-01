@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -127,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myProperty: {fileID: 0}
   Palceholder: {fileID: 7086448691631839018}
+  MouseMoveImage: {fileID: 0}
 --- !u!222 &6447115732092632034
 CanvasRenderer:
   m_ObjectHideFlags: 0

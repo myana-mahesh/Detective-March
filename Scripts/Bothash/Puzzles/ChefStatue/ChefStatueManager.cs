@@ -9,6 +9,9 @@ public class ChefStatueManager : MonoBehaviour {
     private PuzzleSaveSO SavingSo;
     private string fileName = "ChefStatue.puzzle";
     private bool _puzzleComplete=false;
+    public List<GameObject> PuzzlePieces;
+    public GameObject blocker;
+    public string SteamACH="Pro Chef";
     // Start is called before the first frame update
     void Start () {
 
@@ -18,6 +21,7 @@ public class ChefStatueManager : MonoBehaviour {
         if (checkStatus () && !_puzzleComplete) {
             Prize.SetActive (true);
             _puzzleComplete = true;
+            SteamHandler.instance.SetAch(SteamACH);
         }
     }
     bool checkStatus () {
@@ -36,6 +40,22 @@ public class ChefStatueManager : MonoBehaviour {
             }
 
             _puzzleComplete = SavingSo.PuzzleCompleted;
+        }
+        int counter = 0;
+        foreach(var pzzItem in PuzzlePieces)
+        {
+            foreach(var invItem in bothash.InventoryManager.instance.InventorySO.myInventory)
+            {
+                if(pzzItem.name == invItem.puzzlePieceName)
+                {
+                    counter++;
+                }
+            }
+        }
+        if(counter>=PuzzlePieces.Count){
+            blocker.SetActive(false);
+            
+
         }
 
         

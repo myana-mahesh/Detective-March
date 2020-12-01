@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: AfterPaintingPuzzle
+  m_EditorClassIdentifier: 
+  sentences:
+  - "Hey! How\u2019s the investigation going? Are you enjoying it?"
+  - "Yeah! It\u2019s been good till now. I just can\u2019t solve one puzzle."
+  - A puzzle?
+  - Yes. I found a box with a jigsaw puzzle.
+  - Oh yes. I know that box.
+  - Some pieces are missing from that puzzle though.
+  - I think there could be something in that box which will help me investigating
+    further.
+  - "I\u2019ve found three so far. Just need one more."
+  - Oh! I have one.
+  - Are you kidding me?
+  - I was looking for it all over the place!
+  - ...
+  Audios:
+  - {fileID: 8300000, guid: 7a9887caa0d302d45923481f0058d679, type: 3}
+  - {fileID: 8300000, guid: a383e68a588c169429d53188395d489e, type: 3}
+  - {fileID: 8300000, guid: 40f915645499adc479bb51317e06abf7, type: 3}
+  - {fileID: 8300000, guid: 9cb21872ed248bd4490fede1550e12b9, type: 3}
+  - {fileID: 8300000, guid: 2d7e4c1ab764978488b8f6954c9f148f, type: 3}
+  - {fileID: 8300000, guid: 735cd40d3a8ac18468cfbd68102a242e, type: 3}
+  - {fileID: 8300000, guid: 6565645cde2ff2f4e979b21a38f1b0da, type: 3}
+  - {fileID: 8300000, guid: e3b434007e1275c408b9aa033152e59c, type: 3}
+  - {fileID: 8300000, guid: 00fc1febf7f684940b8b7371efbf2564, type: 3}
+  - {fileID: 8300000, guid: 52db615f5e5bfaf4e98454bde518acba, type: 3}
+  - {fileID: 8300000, guid: 09b71a8e2aef46c479b43051249c854d, type: 3}
+  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}

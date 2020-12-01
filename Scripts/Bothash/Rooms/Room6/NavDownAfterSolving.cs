@@ -16,8 +16,8 @@ public class NavDownAfterSolving : MonoBehaviour {
 
     }
     private void OnMouseDown () {
-        if (PlayerPrefs.HasKey ("PantingSolved") && !PlayerPrefs.HasKey ("PantingSolvedNavigationDone")) {
-            PlayerPrefs.SetInt ("PantingSolvedNavigationDone", 1);
+        if (FileBasedPrefs.HasKey ("PantingSolved") && !FileBasedPrefs.HasKey ("PantingSolvedNavigationDone")) {
+            FileBasedPrefs.SetInt ("PantingSolvedNavigationDone", 1);
             bothash.DialogueM.Instance.sentence = sentences;
             bothash.DialogueM.Instance.Avatar = character;
             bothash.DialogueM.Instance.Audio = Audios;

@@ -14,7 +14,7 @@ public class SilverKey : MonoBehaviour {
 
     }
     private void OnMouseDown () {
-        PlayerPrefs.SetInt ("SilverKeyfound", 1);
+        FileBasedPrefs.SetInt ("SilverKeyfound", 1);
         foreach (GameObject item in examineCasket)
         {
             item.GetComponent<BoxCollider2D>().enabled=false;;    

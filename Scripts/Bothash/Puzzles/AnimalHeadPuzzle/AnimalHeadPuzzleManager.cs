@@ -22,6 +22,9 @@ public class AnimalHeadPuzzleManager : MonoBehaviour {
 
     private string fileName = "AnimalHeadData.puzzle";
 
+    public string SteamACH = "Puzzle Master";
+
+    public string SteamACH2 = "Eye Surgeon";
     public void OnEnable () {
 
         var status = LoadPuzzleData ();
@@ -51,6 +54,7 @@ public class AnimalHeadPuzzleManager : MonoBehaviour {
     public void LoadPuzzle () {
         Debug.Log ("Looking");
         if (!_alreadyLoaded) {
+            int counter = 0;
             foreach (var item in listOfPuzzlePieces) {
                 Debug.Log (bothash.InventoryManager.instance.InventorySO.myInventory.Count);
                 if (bothash.InventoryManager.instance.InventorySO.myInventory.Count > 0) {
@@ -58,17 +62,30 @@ public class AnimalHeadPuzzleManager : MonoBehaviour {
 
                         Debug.Log ("In Loop");
 
-                        if (item.gameObject.name != invItem.puzzlePieceName) {
-                            Debug.Log ("Not Enough Items");
-                            return;
-                        } else {
+                        Debug.Log(string.Format("PUZZLE: {0} {1}",item.gameObject.name, invItem.puzzlePieceName));
+                        if (item.gameObject.name == invItem.puzzlePieceName) {
                             Debug.Log ("found out a piece");
+                            counter++;
                             continue;
+                        } else {
+                            Debug.Log ("not match");
+                            
                         }
                     }
                 } else {
+                    Debug.Log("Animal Locked");
                     return;
                 }
+            }
+
+            if(counter >= listOfPuzzlePieces.Count)
+            {
+                BlockingObject.SetActive(false);
+                
+            }
+            else
+            {
+                return;
             }
         }
 
@@ -87,7 +104,7 @@ public class AnimalHeadPuzzleManager : MonoBehaviour {
                 if (item.enabled)
                 {
                     ++_totalEyesDroped;
-                    Debug.Log(string.Format("FOUNT {0}", _totalEyesDroped));
+                    //Debug.Log(string.Format("FOUNT {0}", _totalEyesDroped));
                 }
 
             }
@@ -98,6 +115,20 @@ public class AnimalHeadPuzzleManager : MonoBehaviour {
                 RewardObject.SetActive(true);
                 _isRewardProcessed = true;
                 _isPuzzleCompleted = true;
+                SteamHandler.instance.SetAch(SteamACH2);
+                if (FileBasedPrefs.HasKey("bigPuzzCount"))
+                {
+                    FileBasedPrefs.SetInt("bigPuzzCount", FileBasedPrefs.GetInt("bigPuzzCount") + 1);
+                }
+                else
+                {
+                    FileBasedPrefs.SetInt("bigPuzzCount", 1);
+                }
+                Debug.Log(FileBasedPrefs.GetInt("bigPuzzCount"));
+                if (FileBasedPrefs.GetInt("bigPuzzCount")>=8)
+                {
+                    SteamHandler.instance.SetAch(SteamACH);
+                }
                 buffaloHead.SetActive(true);
                 
             }
@@ -119,7 +150,7 @@ public class AnimalHeadPuzzleManager : MonoBehaviour {
     public void CollectReward () {
         _rewardCollected = true;
         _isPuzzleCompleted = true;
-        //PlayerPrefs.SetBool("animalHeadCompleted",true);
+        //FileBasedPrefs.SetBool("animalHeadCompleted",true);
         
 
     }

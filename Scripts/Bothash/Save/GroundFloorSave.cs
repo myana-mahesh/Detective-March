@@ -10,7 +10,8 @@ public class GroundFloorSave : MonoBehaviour
     public GameObject[] objects;
     public ObjectSavingSo objectSaving;
     public AnimatingObjectsClass[] AnimatingObjectList;
-
+    public  GameObject mainScreen;
+    public GameObject allRooms;
 
 
 
@@ -21,7 +22,7 @@ public class GroundFloorSave : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -30,6 +31,16 @@ public class GroundFloorSave : MonoBehaviour
         if (File.Exists(Application.persistentDataPath + "/GameData/game_Data.botHash"))
         {
             LoadGameData();
+            if(FileBasedPrefs.HasKey("inGameSceneChange")){
+                FileBasedPrefs.DeleteKey("inGameSceneChange");
+                mainScreen.SetActive(false);
+                allRooms.SetActive(true);
+            }
+            if(FileBasedPrefs.HasKey("showStairCase")){
+                FileBasedPrefs.DeleteKey("showStairCase");
+                objects[97].SetActive(false);
+                objects[60].SetActive(true);
+            }
         }
     }
 
@@ -84,8 +95,6 @@ public class GroundFloorSave : MonoBehaviour
             tempobj.positionHold = AnimatingObjectList[i].positionHold;
             tempobj.PositonToHold = AnimatingObjectList[i].PositonToHold;
             objectSaving.AnimatingObjectsData.Add(tempobj);
-
-
         }
 
 

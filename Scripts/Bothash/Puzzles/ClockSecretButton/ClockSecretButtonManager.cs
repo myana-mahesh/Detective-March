@@ -16,7 +16,7 @@ public class ClockSecretButtonManager : MonoBehaviour
 
     private Stack<GameObject> _stack = new Stack<GameObject>();
     private bool _puzzleCompleted=false;
-
+    public string SteamACH="Well Timed!";
     
     void Start()
     {
@@ -74,7 +74,7 @@ public class ClockSecretButtonManager : MonoBehaviour
                     Reward.SetActive(true);
                     Debug.Log("Won");
                     _puzzleCompleted = true;
-
+                    SteamHandler.instance.SetAch(SteamACH);
                 }
             }
             else

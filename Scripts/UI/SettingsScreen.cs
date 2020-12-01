@@ -33,7 +33,7 @@ public class SettingsScreen : MonoBehaviour {
 
         SoundManager.Instance.SoundsOnOff();
 
-        PlayerPrefs.SetInt("sound", SoundManager.Instance.Sound);
+        FileBasedPrefs.SetInt("sound", SoundManager.Instance.Sound);
 
     }
     public void OnClickMusicToggle()
@@ -51,7 +51,7 @@ public class SettingsScreen : MonoBehaviour {
 
         SoundManager.Instance.MusicsOnOff();
 
-        PlayerPrefs.SetInt("music", SoundManager.Instance.Music);
+        FileBasedPrefs.SetInt("music", SoundManager.Instance.Music);
 
     }
 

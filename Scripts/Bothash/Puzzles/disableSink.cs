@@ -8,17 +8,7 @@ public class disableSink : MonoBehaviour
     public GameObject albumRefernce;
     public GameObject[] examineList;
     
-    public static disableSink Instance { get; private set; }
-    void Awake () 
-    {
-        if (Instance == null) {
-                Instance = this;
-                DontDestroyOnLoad (gameObject);
-            } 
-        else {
-            Destroy (gameObject);
-        }
-    }
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +22,7 @@ public class disableSink : MonoBehaviour
     }
     public void check(){
         if(stopForPhoto){
-            if (albumRefernce.activeSelf && PlayerPrefs.HasKey("scribbleClicked"))
+            if (albumRefernce.activeSelf && FileBasedPrefs.HasKey("scribbleClicked"))
             {
                 foreach (GameObject item in examineList)
                 {

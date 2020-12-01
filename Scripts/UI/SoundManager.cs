@@ -8,9 +8,21 @@ public class SoundManager : MonoBehaviour {
 
     public AudioSource[] gameMusics;
     public AudioSource[] gameSounds;
+    public AudioSource DialogueSound;
+
+    
 
     public int Sound = 1;
     public int Music = 1;
+
+    public int myMusic ;
+
+    public int puzzleMusic = 2;
+
+    public int album = 4;
+
+    bool _puzzlePlaying = false;
+    bool _gamePlaying = false;
     /*
     -------SOUNDS-------
     0 - step
@@ -27,17 +39,20 @@ public class SoundManager : MonoBehaviour {
     private void Awake()
     {
         Instance = this;
-        if (PlayerPrefs.HasKey("sound"))
+        if (FileBasedPrefs.HasKey("sound"))
         {
-            Sound = PlayerPrefs.GetInt("sound");
+            Sound = FileBasedPrefs.GetInt("sound");
             SoundsOnOff();
         }
 
-        if (PlayerPrefs.HasKey("music"))
+        if (FileBasedPrefs.HasKey("music"))
         {
-            Music = PlayerPrefs.GetInt("music");
+            Music = FileBasedPrefs.GetInt("music");
             MusicsOnOff();
         }
+
+        //gameMusics[Music].Play();
+        
     }
 
     public void SoundsOnOff()
@@ -46,6 +61,7 @@ public class SoundManager : MonoBehaviour {
         {
             gameSounds[i].volume = Sound;
         }
+        DialogueSound.volume=Sound;
     }
     
 
@@ -62,6 +78,57 @@ public class SoundManager : MonoBehaviour {
     public void OnClickButton_Sound()
     {
         gameSounds[0].Play();
+    }
+
+    public void PlayMyMusic(string typeName)
+    {
+        Debug.LogFormat("Sound for {0}", typeName);
+        switch (typeName)
+        {
+            case "Puzzle":
+                gameMusics[album].Stop();
+                gameMusics[myMusic].Stop();
+                if(!_puzzlePlaying)
+                gameMusics[puzzleMusic].Play();
+                _puzzlePlaying = true;
+                _gamePlaying = false;
+                break;
+            case "Game":
+            Debug.Log("inside GAme *******");
+                gameMusics[album].Stop();
+                gameMusics[puzzleMusic].Stop();
+                if(!_gamePlaying){
+                    Debug.Log("inside if******");
+                gameMusics[myMusic].Play();}
+                _gamePlaying = true;
+                _puzzlePlaying = false;
+                break;
+            case "Album":
+                gameMusics[puzzleMusic].Stop();
+                gameMusics[myMusic].Stop();
+                gameMusics[album].Play();
+                //_puzzlePlaying = false;
+                //_gamePlaying = false;
+                break;
+        }
+    }
+
+    public void StopAlbum()
+    {
+        gameMusics[album].Stop();
+        if (_gamePlaying) {
+            gameMusics[myMusic].Play();
+            _puzzlePlaying = false;
+            //_gamePlaying = false;
+        }
+        else if (_puzzlePlaying)
+        {
+            gameMusics[puzzleMusic].Play();
+            //_puzzlePlaying = false;
+            _gamePlaying = false;
+        }
+
+
     }
 
 }

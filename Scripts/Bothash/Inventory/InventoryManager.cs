@@ -17,6 +17,12 @@ namespace bothash
         public GameObject slotPrefab;
         public Transform InventoryScrollSlotParent;
 
+        public List<GameObject> firstSixSlots;
+
+        public int inventoryCount = 0;
+        public Image MouseMoveImage;
+
+        public Dictionary<string, GameObject> slotItemDict;
         #endregion
 
 
@@ -32,20 +38,21 @@ namespace bothash
 
         void OnEnable()
         {
-            Debug.Log("Loading Data From Database");
-            loadFromDB();
+           
         }
 
         void OnDisable()
         {
             Debug.Log("Saving To Database");
-            saveToDB();
+            //saveToDB();
         }
 
 
         void Start()
         {
-            
+             Debug.Log("Loading Data From Database");
+            slotItemDict = new Dictionary<string, GameObject>();
+            loadFromDB();
             
         }
 
@@ -61,31 +68,63 @@ namespace bothash
 
         public void addToInventory(bothash.InventoryItemSO item)
         {
+            GameObject Slot;
+            //check for first already instatiated objects
+            if(inventoryCount < firstSixSlots.Count)
+            {
+                Slot = firstSixSlots[inventoryCount];
+                Slot.GetComponent<bothash.Slot>().Palceholder.color = new Color(1, 1, 1, 1);
+
+            }
+            else
+            {
+                Slot = Instantiate(slotPrefab, InventoryScrollSlotParent);
+            }
+            //if available use that slot
+            //else do the below
+            //counter++
+
             //@todo
             //instantiate slot gameobject
-            GameObject Slot = Instantiate(slotPrefab, InventoryScrollSlotParent);
+
+            /////REPLACE THE SPRITE WITH FRESH SPRITE
+            item.inventorySprite = inventoryDictionary.instance.invNameSpriteMap[item.itemName];
+
             // add reference of item to the slot object
             Slot.GetComponent<bothash.Slot>().myProperty = item;
             //add sprite to slot
             Slot.GetComponent<bothash.Slot>().Palceholder.sprite= item.inventorySprite;
+
+            slotItemDict.Add(item.itemName, Slot);
             //add item to player whole inventory
             InventorySO.myInventory.Add(item);
 
+            inventoryCount++;
             Debug.Log("Added");
+            Debug.Log(string.Format("INV COUNT {0}", inventoryCount));
 
         }     
         
-
+        
 
         public void removeFromInventory(GameObject invObj)
         {
+            //if counter < 6
+            //counter --
+            //else do nothing
+            
+
             bothash.InventoryItemSO item = invObj.GetComponent<bothash.Slot>().myProperty;
             
             if (item)
             {
+                if (firstSixSlots.Contains(invObj))
+                    firstSixSlots.Remove(invObj);
+                slotItemDict.Remove(item.itemName);
                 var result = InventorySO.myInventory.Remove(item);
                 Debug.Log(string.Format("Removed: {0}", result.ToString()));
-                
+                inventoryCount--;
+                Debug.Log(string.Format("INV COUNT {0}", inventoryCount));
             }
         }
 
@@ -127,6 +166,7 @@ namespace bothash
 
         public void loadFromDB()
         {
+            inventoryDictionary.instance.StartMap();
             InventorySO.myInventory.Clear();
             int i = 0;
             while (File.Exists(Application.persistentDataPath + "/Inventory" + string.Format("/{0}.invso", i)))
@@ -136,13 +176,18 @@ namespace bothash
                 BinaryFormatter binary = new BinaryFormatter();
                 JsonUtility.FromJsonOverwrite((string)binary.Deserialize(file), temp);
                 file.Close();
-                InventorySO.myInventory.Add(temp);
+                //InventorySO.myInventory.Add(temp);
                 Debug.Log("Loaded into SO");
 
-                Debug.Log("Name: " + InventorySO.myInventory[i].name);
-                GameObject Slot = Instantiate(slotPrefab, InventoryScrollSlotParent);
-                Slot.GetComponent<bothash.Slot>().myProperty = InventorySO.myInventory[i];
-                Slot.GetComponent<bothash.Slot>().Palceholder.sprite= InventorySO.myInventory[i].inventorySprite;
+                
+
+                addToInventory(temp);
+
+                Debug.Log("Name: " + temp.name);
+
+                //GameObject Slot = Instantiate(slotPrefab, InventoryScrollSlotParent);
+                //Slot.GetComponent<bothash.Slot>().myProperty = InventorySO.myInventory[i];
+                //Slot.GetComponent<bothash.Slot>().Palceholder.sprite= InventorySO.myInventory[i].inventorySprite;
 
                 i++;
 

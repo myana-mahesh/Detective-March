@@ -19,9 +19,9 @@ public class NavDownAfterSink : MonoBehaviour {
 
     }
     void OnMouseDown () {
-        if (!PlayerPrefs.HasKey ("afterSink") && PlayerPrefs.HasKey ("clickedTaps")) {
+        if (!FileBasedPrefs.HasKey ("afterSink") && FileBasedPrefs.HasKey ("clickedTaps")) {
             Debug.Log ("downClicked");
-            PlayerPrefs.SetInt ("afterSink", 1);
+            FileBasedPrefs.SetInt ("afterSink", 1);
             bothash.DialogueM.Instance.sentence = sentences;
             bothash.DialogueM.Instance.Avatar = character;
             bothash.DialogueM.Instance.Audio = Audios;

@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class checkrewar : MonoBehaviour
 {   
-    public bool stopForPhoto;
-    public GameObject albumRefernce;
-    public GameObject[] examineList;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +19,7 @@ public class checkrewar : MonoBehaviour
     private void OnMouseDown()
     {   
         
-        disableAnimalExamine.Instance.rewardCollected=true;
+        FileBasedPrefs.SetInt("mendallion1Collcected",1);
         disableAnimalExamine.Instance.check();
     }
 }

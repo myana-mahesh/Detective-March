@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25b3392ecc471bc4a95a5ea552c20aa7, type: 3}
   m_Name: Dolphin2
   m_EditorClassIdentifier: 
-  itemName: Dolphin
+  itemName: Dolphin2
   inventorySprite: {fileID: 21300000, guid: b528fed79f7f89c41a5dd14ea370e388, type: 3}
   isPuzzleObject: 1
   puzzlePieceName: Dolphin2
@@ -22,3 +22,7 @@ MonoBehaviour:
   ToolName: 
   isDropAble: 0
   DropObjectName: 
+  hideSelf: 1
+  isSimpleDrop: 0
+  simpleDropObjectName: 
+  blockerDiaglogue: 1

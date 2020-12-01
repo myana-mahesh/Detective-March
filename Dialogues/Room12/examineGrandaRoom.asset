@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: examineGrandaRoom
+  m_EditorClassIdentifier: 
+  sentences:
+  - "It\u2019s locked?"
+  - Where is the key, Milly?
+  - "Ahh\u2026 Actually, I lost it."
+  - What? Are you serious?
+  - Yeah. You have to figure out another way.
+  - But how?
+  - "I don\u2019t know."
+  - Oh, whatever.
+  Audios:
+  - {fileID: 8300000, guid: 3cfdff13d872717448507b6a813ac639, type: 3}
+  - {fileID: 8300000, guid: 687f6c9541f7f654faf5c5d66591a867, type: 3}
+  - {fileID: 8300000, guid: 263b19d7833663d48b73c1766dce3f5b, type: 3}
+  - {fileID: 8300000, guid: d47897fe75d9ec942a6043da203f63f7, type: 3}
+  - {fileID: 8300000, guid: 4e3153c4af9f4a74ebcd0ce8083c2d02, type: 3}
+  - {fileID: 8300000, guid: b04b416639423fb42a3286114823f77a, type: 3}
+  - {fileID: 8300000, guid: e685caf78ed0e0c4cb6c4df060c16644, type: 3}
+  - {fileID: 8300000, guid: 602e7e62eb23b4b43883b79d7251ccfc, type: 3}

@@ -20,5 +20,8 @@ MonoBehaviour:
   isMechanicTools: 0
   MechanicsDropObjectName: 
   ToolName: 
-  isDropAble: 0
-  DropObjectName: 
+  isDropAble: 1
+  DropObjectName: spade
+  hideSelf: 1
+  isSimpleDrop: 0
+  simpleDropObjectName: 

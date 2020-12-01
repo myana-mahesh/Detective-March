@@ -5,19 +5,27 @@ using UnityEngine;
 public class MainMenuScreen : MonoBehaviour
 {
     public GameObject allRooms;
+    private void Awake()
+    {
+        if (FileBasedPrefs.HasKey("inGameSceneChange"))
+        {
+            gameObject.SetActive(false);
+            FileBasedPrefs.DeleteKey("inGameSceneChange");
+        }
+    }
     public void Start()
     {
         //OnClick_Play();
         Debug.Log("Start");
-        if (PlayerPrefs.GetInt("ComingFromRestart") == 1)
+        if (FileBasedPrefs.GetInt("ComingFromRestart") == 1)
         {
             UIManager.Instance.mainMenu.gameObject.SetActive(false);
             // Invoke("DisableMenu",0.5f);
             allRooms.SetActive(true);
-            PlayerPrefs.SetInt("ComingFromRestart", 0);
+            FileBasedPrefs.SetInt("ComingFromRestart", 0);
 
         }
-        SoundManager.Instance.gameMusics[0].Play();
+        //SoundManager.Instance.gameMusics[0].Play();
     }
 
 
@@ -30,7 +38,7 @@ public class MainMenuScreen : MonoBehaviour
 
     public void OnClick_QuitButton()
     {
-        // PlayerPrefs.SetInt("ComingFromRestart", 0);
+        // FileBasedPrefs.SetInt("ComingFromRestart", 0);
         Application.Quit();
     }
 
@@ -40,6 +48,6 @@ public class MainMenuScreen : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        PlayerPrefs.SetInt("ComingFromRestart", 0);
+        FileBasedPrefs.SetInt("ComingFromRestart", 0);
     }
 }

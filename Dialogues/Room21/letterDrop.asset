@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: letterDrop
+  m_EditorClassIdentifier: 
+  sentences:
+  - What are you doing?
+  - "I also tried it many times but that stupid thing doesn\u2019t accept any letter."
+  - Perhaps it is broken.
+  - Or you need to do something else with it.
+  Audios:
+  - {fileID: 8300000, guid: e973284643498e446a3995a384b3f9f1, type: 3}
+  - {fileID: 8300000, guid: c908a1268fd6e924194df9a235715bc9, type: 3}
+  - {fileID: 8300000, guid: 23b170bca6cd6ea44a0cdf024f4efc53, type: 3}
+  - {fileID: 8300000, guid: a26b8cf228f4a7f4f85d5f32a708914e, type: 3}

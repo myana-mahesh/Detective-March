@@ -15,8 +15,8 @@ public class SilverCasketDown : MonoBehaviour {
 
     }
     private void OnMouseDown () {
-        if (PlayerPrefs.HasKey ("SilverKeyfound") && !PlayerPrefs.HasKey ("BenardEntryDone")) {
-            PlayerPrefs.SetInt ("BenardEntryDone", 1);
+        if (FileBasedPrefs.HasKey ("SilverKeyfound") && !FileBasedPrefs.HasKey ("BenardEntryDone")) {
+            FileBasedPrefs.SetInt ("BenardEntryDone", 1);
             bothash.DialogueM.Instance.sentence = Dialogues.sentences;
             bothash.DialogueM.Instance.Avatar = character;
             bothash.DialogueM.Instance.Audio = Dialogues.Audios;

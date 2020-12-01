@@ -5,10 +5,18 @@ using UnityEngine;
 public class PaintingManager : MonoBehaviour {
     public List<SpriteRenderer> paintingSprites = new List<SpriteRenderer> ();
     public GameObject Prize;
+    public GameObject painting;
+    public GameObject examinePainting;
     [SerializeField]
     private PuzzleSaveSO SavingSo;
     private string fileName = "Painting.puzzle";
+    public List<GameObject> PuzzlePieces;
+    bool puzzleCompleted;
+    public GameObject blocker;
     // Start is called before the first frame update
+
+    public string SteamACH = "Puzzle Master";
+    public string SteamACH1="Repaired & Restored";
     void Start () {
 
     }
@@ -19,6 +27,23 @@ public class PaintingManager : MonoBehaviour {
                 paintingSprites[i].enabled = true;
             }
         }
+
+        int counter = 0;
+        foreach(var pzzItem in PuzzlePieces)
+        {
+            foreach(var invItem in bothash.InventoryManager.instance.InventorySO.myInventory)
+            {
+                if(pzzItem.name == invItem.puzzlePieceName)
+                {
+                    counter++;
+                }
+            }
+        }
+        if(counter>=PuzzlePieces.Count){
+            blocker.SetActive(false);
+            
+
+        }
     }
 
     public void OnDisable () {
@@ -27,11 +52,32 @@ public class PaintingManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (checkStatus ()) {
+        if (checkStatus () && !puzzleCompleted) {
             Prize.SetActive (true);
+            painting.SetActive(true);
+            SteamHandler.instance.SetAch(SteamACH1);
+            puzzleCompleted=true;
+            //examinePainting.SetActive(false);
+            if (FileBasedPrefs.HasKey("bigPuzzCount"))
+            {
+                FileBasedPrefs.SetInt("bigPuzzCount", FileBasedPrefs.GetInt("bigPuzzCount") + 1);
+            }
+            else
+            {
+                FileBasedPrefs.SetInt("bigPuzzCount", 1);
+            }
+            Debug.Log(FileBasedPrefs.GetInt("bigPuzzCount"));
+            if (FileBasedPrefs.GetInt("bigPuzzCount") >= 8)
+            {
+                SteamHandler.instance.SetAch(SteamACH);
+            }
 
-            if (!PlayerPrefs.HasKey ("paintigOjectsPicked")) {
-                PlayerPrefs.SetInt ("PantingSolved", 1);
+
+
+
+
+            if (!FileBasedPrefs.HasKey ("paintigOjectsPicked")) {
+                FileBasedPrefs.SetInt ("PantingSolved", 1);
             }
 
         }

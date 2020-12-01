@@ -13,55 +13,74 @@ MonoBehaviour:
   m_Name: AfterKeyFound
   m_EditorClassIdentifier: 
   sentences:
-  - "Look, Milly, at what I\u2019ve found."
+  - "Look, Milly, what I\u2019ve found."
   - A Silver Key?
-  - ' Do you know where this belongs?'
+  - Do you know where this belongs?
   - I have no clue about it, but I think this belongs to something very important.
-  - What have you got there, ladies? An original will. (Evil laugh)
-  - 'Who is this guy? (Whispers) '
-  - "Mr. Bernard (Angrily) \tWhat are you doing here? "
-  - "I thought you may need some help, my dear. (Fake condolence) \tGrief may have
-    taken over you after your grandfather\u2019s death. "
+  - What have you got there, ladies? An original will.
+  - Who is this guy?
+  - Mr. Bernard
+  - What are you doing here?
+  - I thought you may need some help, my dear.
+  - "Grief may have taken over you after your grandfather\u2019s death."
   - "Why don\u2019t you go and live with your other siblings? You will feel better."
-  - ' I know you have your eyes on this house but you should better stop dreaming.'
-  - "You foolish girl. Why don\u2019t you understand? (Angry and irritated) \t\t                                                      
-    I have a will. No one can stop me."
-  - "This place could be an amazing hotel. \t\t                                                                
-    Let\u2019s make a deal. I will give you 2 Grand to leave this place."
-  - ' I will take only 1 Grand, sir.'
-  - March! (Angrily)
-  - "\u2026"
-  - "The will you have is a fake one and I\u2019ll prove it.                                                                                                           
-    Keep your offers to yourself. "
-  - "Who is this girl? \t\tOh! Is she the detective you were talking about? \t\t(Laugh)
-    She will definitely solve this case. (More laughs)"
-  - "(Angrily) How rude! \tWhat do you think of yourself? "
-  - "Calm down, March. Don\u2019t listen to him. \tHe\u2019s a jerk. \tYou are already
-    doing a great job. \tI can feel you will solve this case quickly. "
-  - '(Emotional) Really, you think that? '
-  - "Yes, definitely. \tI think you have searched enough here. \tLet\u2019s go to
-    the 1st floor. \tI am sure this Silver Key belongs somewhere there. "
+  - I know you have your eyes on this house but you should better stop dreaming.
+  - "You foolish girl. Why don\u2019t you understand?"
+  - I have a will. No one can stop me.
+  - This place could be an amazing hotel.
+  - "Let\u2019s make a deal. I will give you 2 Grand to leave this place."
+  - I will take only 1 Grand, sir.
+  - March!
+  - ...
+  - "The will you have is a fake one and I\u2019ll prove it."
+  - Keep your offers to yourself.
+  - Who is this girl?
+  - Oh! Is she the detective you were talking about?
+  - She will definitely solve this case.
+  - How rude!
+  - What do you think of yourself?
+  - "Calm down, March. Don\u2019t listen to him. He\u2019s a jerk."
+  - You are already doing a great job.
+  - I can feel you will solve this case quickly.
+  - Really, you think that?
+  - Yes, definitely.
+  - I think you have searched enough here.
+  - "Let\u2019s go to the 1st floor."
+  - I am sure this Silver Key belongs somewhere there.
   - "Alright, let\u2019s move then."
   Audios:
+  - {fileID: 8300000, guid: 7207791fe06e9dc4eaaa0f774882cb46, type: 3}
+  - {fileID: 8300000, guid: d701257059f63524a98da7ca7c629b18, type: 3}
+  - {fileID: 8300000, guid: 03d6ee6707ff1f642b7c5475d06d8f14, type: 3}
+  - {fileID: 8300000, guid: 1d64fe792640d004eb5f46e221573983, type: 3}
+  - {fileID: 8300000, guid: 8a0bf8117f51406439c05946598faa02, type: 3}
+  - {fileID: 8300000, guid: 39df7c3028c35c347b46c0d3b2efbf82, type: 3}
+  - {fileID: 8300000, guid: 0f3696bf395c00642a282746b0c76e33, type: 3}
+  - {fileID: 8300000, guid: b85f0f399ed74954bbf01ec3bc8aa3a1, type: 3}
+  - {fileID: 8300000, guid: 79c4ddd23714e6b4cb9979fa339e0f4b, type: 3}
+  - {fileID: 8300000, guid: 95a72c96e29909a4cba8400a5a98ef6f, type: 3}
+  - {fileID: 8300000, guid: 9be72382b1a5b5d4f83ab625ab4d7885, type: 3}
+  - {fileID: 8300000, guid: 624e6503aac2a2748b259d331c5e8028, type: 3}
+  - {fileID: 8300000, guid: 04d03aa7f20930c409ffc91e49e348d7, type: 3}
+  - {fileID: 8300000, guid: 708ef3fd63a96664b86294e452ca4657, type: 3}
+  - {fileID: 8300000, guid: 67022fb5583b16444b1fad2acb6c120d, type: 3}
+  - {fileID: 8300000, guid: d990d9e920bcd8343b8e32b160c35d12, type: 3}
+  - {fileID: 8300000, guid: 816c2121bcdab3a43b73db43e9b09038, type: 3}
+  - {fileID: 8300000, guid: 1cc06e93bc2491048961a6b193e5b56c, type: 3}
   - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
-  - {fileID: 8300000, guid: d32f089332ba9324e8a3f093e2178110, type: 3}
+  - {fileID: 8300000, guid: a954acb01de2395428de3231978bdbb6, type: 3}
+  - {fileID: 8300000, guid: 6d9538c2e873de4419d520241fcf5cce, type: 3}
+  - {fileID: 8300000, guid: 70b53dc8dd6aa7442ae64a69d188805e, type: 3}
+  - {fileID: 8300000, guid: 0dd55a428294d89468c1fda21cd4e9a5, type: 3}
+  - {fileID: 8300000, guid: 1daafcf3ba568fc448421b438474bfc8, type: 3}
+  - {fileID: 8300000, guid: 9442bc92ce3c6544da8bc68c18620b24, type: 3}
+  - {fileID: 8300000, guid: 25d24df487c84d9488f4186b1cff4c2e, type: 3}
+  - {fileID: 8300000, guid: 19c3f044024379440ad66ea07f275c85, type: 3}
+  - {fileID: 8300000, guid: d5c7f98e8a17e1a4eb13cfdd0346983e, type: 3}
+  - {fileID: 8300000, guid: f179fea3cd473b34d8ad9c2d5fc58835, type: 3}
+  - {fileID: 8300000, guid: 44c6ce058d5738c4399ac4b45343c338, type: 3}
+  - {fileID: 8300000, guid: dbde386decfd7664596d63cbeb2581d1, type: 3}
+  - {fileID: 8300000, guid: 56884224d3c6a984da7577bf896f515c, type: 3}
+  - {fileID: 8300000, guid: d8fbb6e55390e0a48bc70938dcc52e67, type: 3}
+  - {fileID: 8300000, guid: eb16ee819d16e74489a48f399fd30672, type: 3}
+  - {fileID: 8300000, guid: 790c31c1cd42e3f4b80fe571bdb95857, type: 3}

@@ -127,6 +127,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myProperty: {fileID: 0}
   Palceholder: {fileID: 3484489180411194588}
+  Dialogues: {fileID: 11400000, guid: 6626eebb7da6e3344b242e8c171a6d96, type: 2}
+  character:
+  - {fileID: 2168400159993812335, guid: 26cce8ac59840c743a23c32c02d8c551, type: 3}
+  - {fileID: 2168400159993812335, guid: 26cce8ac59840c743a23c32c02d8c551, type: 3}
+  - {fileID: 2168400159993812335, guid: 26cce8ac59840c743a23c32c02d8c551, type: 3}
 --- !u!222 &827459882940629012
 CanvasRenderer:
   m_ObjectHideFlags: 0

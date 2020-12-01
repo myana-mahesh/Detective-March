@@ -5,6 +5,8 @@ using UnityEngine.Playables;
 
 public class AnimateOnce : MonoBehaviour
 {
+    public GameObject objectToHide;
+    
     public void OnEnable()
     {
         PlayVent();
@@ -13,15 +15,18 @@ public class AnimateOnce : MonoBehaviour
     
     public void PlayVent()
     {
-        if (PlayerPrefs.HasKey(this.gameObject.name))
+        if (FileBasedPrefs.HasKey(this.gameObject.name))
         {
             gameObject.GetComponent<Animator>().enabled = false;
             return;
         }
         else
         {
-            PlayerPrefs.SetString(this.gameObject.name, "Done");
+            FileBasedPrefs.SetString(this.gameObject.name, "Done");
             gameObject.GetComponent<Animator>().enabled = true;
         }
+    }
+    public void HideObject(){
+        objectToHide.SetActive(false);
     }
 }

@@ -13,7 +13,7 @@ public class disableAnimalExamine : MonoBehaviour
     {
         if (Instance == null) {
                 Instance = this;
-                DontDestroyOnLoad (gameObject);
+                //DontDestroyOnLoad (gameObject);
             } 
         else {
             Destroy (gameObject);
@@ -28,11 +28,11 @@ public class disableAnimalExamine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        check();
     }
     public void check(){
         if(stopForPhoto){
-            if (albumRefernce.activeSelf && rewardCollected)
+            if (albumRefernce.activeSelf && FileBasedPrefs.HasKey("mendallion1Collcected"))
             {
                 foreach (GameObject item in examineList)
                 {
@@ -40,7 +40,7 @@ public class disableAnimalExamine : MonoBehaviour
                 }
             }
         }
-        else
+        else if(FileBasedPrefs.HasKey("mendallion1Collcected"))
         {
             foreach (GameObject item in examineList){
                 item.SetActive(false);

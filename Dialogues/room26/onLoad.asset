@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: onLoad
+  m_EditorClassIdentifier: 
+  sentences:
+  - What a beautiful mirror!
+  - But why are these mirrors not showing my reflection?
+  - Do you mean this?
+  - "Aaaahhhhh\u2026 "
+  Audios:
+  - {fileID: 8300000, guid: 303365a817d8e9640a179cf299f07756, type: 3}
+  - {fileID: 8300000, guid: f16b7798b1eb35e41ae75996cf033ac1, type: 3}
+  - {fileID: 8300000, guid: c895701fc0839f34386ad9b11687f9a8, type: 3}
+  - {fileID: 8300000, guid: b33e84c58022af842b78ae666cda4b7c, type: 3}

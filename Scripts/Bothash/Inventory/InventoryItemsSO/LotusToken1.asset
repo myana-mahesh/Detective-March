@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Lotus Token
   inventorySprite: {fileID: 21300000, guid: 5949793023709cf4bb147f34a525a376, type: 3}
-  isPuzzleObject: 0
-  puzzlePieceName: 
+  isPuzzleObject: 1
+  puzzlePieceName: LotusPetalToken1
   puzzleName: 
   isMechanicTools: 0
   MechanicsDropObjectName: 
   ToolName: 
   isDropAble: 0
   DropObjectName: 
+  isSimpleDrop: 0
+  simpleDropObjectName: 

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: onLoad
+  m_EditorClassIdentifier: 
+  sentences:
+  - Oooh! Nice room.
+  - "I was not expecting this, you\u2019re normally really messy."
+  - I am all grown up now and pretty organized.
+  - Cool.
+  Audios:
+  - {fileID: 8300000, guid: c2f92f89f56f564429ebac879ed2c678, type: 3}
+  - {fileID: 8300000, guid: 55f5281e018c656439e080991d1ecf2b, type: 3}
+  - {fileID: 8300000, guid: c6cd6c8086efcc64a8e997e3311ccaa7, type: 3}
+  - {fileID: 8300000, guid: 76f02978e69d76c4792f8ed70ae00dd9, type: 3}

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: onLoad
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'Hello, March. '
+  - "Aahhh\u2026 Stop doing this, please."
+  - Oh, I am sorry. You are pretty timid though.
+  - Timid? Anybody will get scared if they see a ghost of an old rotten man.
+  - "Hee\u2026 hee\u2026 heee\u2026."
+  - Well, you are very close to solving this puzzle.
+  - The will is somewhere near.
+  - But where? You must know it.
+  - "Hmmm\u2026 You know, old people forget things quite easily."
+  - "I don\u2019t remember where I kept it but I know you will need three special
+    items to get the will."
+  - I actually wanted to help you.
+  - Oh! You are so sweet.
+  - Yeah! You are right.
+  - Aaaaaahh...
+  - "Hee\u2026 hee\u2026 heee\u2026."
+  - March, are you in there? Are you alright?
+  - I think so.
+  - Open the door.
+  - What happened? Why were you screaming?
+  - Your grandpa is evil.
+  - "Don\u2019t say things like that about him."
+  - What did he say?
+  - He said that the will is nearby.
+  - "That\u2019s great. It has to be in this room then."
+  Audios:
+  - {fileID: 8300000, guid: c23a24da072386c4fba0dc5aa552f113, type: 3}
+  - {fileID: 8300000, guid: de63f2d072ebecc43bbf0462d9ddb11e, type: 3}
+  - {fileID: 8300000, guid: b3975d79af092494ba2a13dc6d2d871b, type: 3}
+  - {fileID: 8300000, guid: 6d0dcd19729a7f6428fdc65eea091f6f, type: 3}
+  - {fileID: 8300000, guid: b1aae5bcac63bc147a0a4aad09479a3a, type: 3}
+  - {fileID: 8300000, guid: 651e13a2cca5e3b42b50b0fb4460ab3d, type: 3}
+  - {fileID: 8300000, guid: 92989d5a3e88b6442ae2219c62b8d334, type: 3}
+  - {fileID: 8300000, guid: ebf36a072e711054ca54ba9694301711, type: 3}
+  - {fileID: 8300000, guid: 2b2ef78d590615d4b81c74c0dfa28743, type: 3}
+  - {fileID: 8300000, guid: a15836c66c934cb45ba2ab5a3d4d2d81, type: 3}
+  - {fileID: 8300000, guid: 010a97f1167a61243a52221d3c177850, type: 3}
+  - {fileID: 8300000, guid: 64847b685bcd12041a4dc81126361e96, type: 3}
+  - {fileID: 8300000, guid: 6d8306809ca7f234eaefe4f48dd2cc28, type: 3}
+  - {fileID: 8300000, guid: eded9474f8e3b80488af01c9f697a1a1, type: 3}
+  - {fileID: 8300000, guid: 27af80b61fcdaf04a8267c4fc0828be5, type: 3}
+  - {fileID: 8300000, guid: fed97aa3335592a4e9575fabeed6bbf4, type: 3}
+  - {fileID: 8300000, guid: d4c88c90dd1af5a448a59cab046734a2, type: 3}
+  - {fileID: 8300000, guid: 8c536e1be8f09614aa03bad18f57b0a1, type: 3}
+  - {fileID: 8300000, guid: ac5b858d05e552d43be580625b253b9c, type: 3}
+  - {fileID: 8300000, guid: b768231afc390534f8b701202a820b90, type: 3}
+  - {fileID: 8300000, guid: 4bc71fae4514d174598049d30205ded2, type: 3}
+  - {fileID: 8300000, guid: db01d6971acd3274e97b34d7fc7815a3, type: 3}
+  - {fileID: 8300000, guid: af816c1703cd5454a8b4c023f554cf1b, type: 3}
+  - {fileID: 8300000, guid: d0351914eec8ad64b93394254f976142, type: 3}

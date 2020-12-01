@@ -22,3 +22,7 @@ MonoBehaviour:
   ToolName: 
   isDropAble: 0
   DropObjectName: 
+  hideSelf: 1
+  isSimpleDrop: 0
+  simpleDropObjectName: 
+  blockerDiaglogue: 1

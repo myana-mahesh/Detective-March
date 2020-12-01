@@ -28,25 +28,25 @@ public class _RoomManager : MonoBehaviour
         }
         AllRooms[roomIndex].SetActive(value: true);
         currentRoom = AllRooms[roomIndex].name;
-        PlayerPrefs.SetString(roomSaveKey, currentRoom);
+        FileBasedPrefs.SetString(roomSaveKey, currentRoom);
     }
 
     private void OnEnable()
     {
-        /*if (!PlayerPrefs.HasKey(roomSaveKey)) {
+        /*if (!FileBasedPrefs.HasKey(roomSaveKey)) {
 			//currentRoom = AllRooms[0].name;
-            PlayerPrefs.SetString(roomSaveKey, AllRooms[0].name);
+            FileBasedPrefs.SetString(roomSaveKey, AllRooms[0].name);
         }*/
         /*  else {
-              currentRoom = PlayerPrefs.GetString(roomSaveKey);
+              currentRoom = FileBasedPrefs.GetString(roomSaveKey);
           }*/
 
-        if (!PlayerPrefs.HasKey(roomSaveKey))
+        if (!FileBasedPrefs.HasKey(roomSaveKey))
         {
             //currentRoom = AllRooms[0].name;
-            PlayerPrefs.SetString(roomSaveKey, AllRooms[0].name);
+            FileBasedPrefs.SetString(roomSaveKey, AllRooms[0].name);
         }
-        currentRoom = PlayerPrefs.GetString(roomSaveKey);
+        currentRoom = FileBasedPrefs.GetString(roomSaveKey);
 
         foreach (GameObject level in AllRooms)
         {
@@ -63,7 +63,7 @@ public class _RoomManager : MonoBehaviour
 
     private void OnDisable()
     {
-        //PlayerPrefs.SetString(roomSaveKey, currentRoom);
+        //FileBasedPrefs.SetString(roomSaveKey, currentRoom);
         //HintManager.isHogObject = false;
         //HintManager.findPickableObjects = false;
     }
@@ -72,7 +72,7 @@ public class _RoomManager : MonoBehaviour
     {
 //        _InventoryDB.instance.ResetDB();
         //cch.RestartTest();
-        //PlayerPrefs.SetString(roomSaveKey, AllRooms[0].name);
+        //FileBasedPrefs.SetString(roomSaveKey, AllRooms[0].name);
         currentRoom = AllRooms[0].name;
 
         foreach (GameObject level in AllRooms)
@@ -89,17 +89,17 @@ public class _RoomManager : MonoBehaviour
 
         //Invoke("LoadScene", 1f);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        // PlayerPrefs.SetInt("ComingFromRestart", 1);
+        // FileBasedPrefs.SetInt("ComingFromRestart", 1);
     }
     public void SetupRoomOnLevelComplete()
     {
 //        _InventoryDB.instance.ResetDB();
-        //PlayerPrefs.SetString(roomSaveKey, AllRooms[0].name);
-        // currentRoom = PlayerPrefs.GetString(roomSaveKey);
+        //FileBasedPrefs.SetString(roomSaveKey, AllRooms[0].name);
+        // currentRoom = FileBasedPrefs.GetString(roomSaveKey);
 
         //StartCoroutine(LoadAsynchronously());
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        // PlayerPrefs.SetInt("ComingFromRestart", 1);
+        // FileBasedPrefs.SetInt("ComingFromRestart", 1);
     }
 
     IEnumerator LoadAsynchronously()
@@ -111,7 +111,7 @@ public class _RoomManager : MonoBehaviour
 
             yield return null;
         }
-        // PlayerPrefs.SetString(roomSaveKey, AllRooms[0].name);
+        // FileBasedPrefs.SetString(roomSaveKey, AllRooms[0].name);
     }
 
     private void LoadScene()

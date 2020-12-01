@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: examineStatue
+  m_EditorClassIdentifier: 
+  sentences:
+  - Something is written here.
+  - "\u201CHe will only open up his mouth if you are from his clan.\u201D"
+  - Does this mean anything?
+  - Obviously!
+  Audios:
+  - {fileID: 8300000, guid: 926a9be80dbae0148b12189eb242a14f, type: 3}
+  - {fileID: 8300000, guid: f812b0082a803f24daeea9923c483f20, type: 3}
+  - {fileID: 8300000, guid: 4cd592e19ebb1e54caa8d1b19a69f095, type: 3}
+  - {fileID: 8300000, guid: 65453e10afeaa6740994e47673990a5a, type: 3}

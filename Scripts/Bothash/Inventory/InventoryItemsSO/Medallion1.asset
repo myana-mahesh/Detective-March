@@ -22,3 +22,5 @@ MonoBehaviour:
   ToolName: 
   isDropAble: 0
   DropObjectName: 
+  isSimpleDrop: 0
+  simpleDropObjectName: 

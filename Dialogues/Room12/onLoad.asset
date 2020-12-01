@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: onLoad
+  m_EditorClassIdentifier: 
+  sentences:
+  - Milly, my child.
+  - Aaahhh!!!!
+  - Grandpa!!!
+  - "I was watching you. I know you are in grief after my death but you shouldn\u2019t
+    worry about me."
+  - I can see you have got the Silver Key. This will lead you to the original will.
+  - Thanks, Grandpa.
+  - I have to go now, but take care of yourself.
+  - I love it when you smile, Milly.
+  - "Why didn\u2019t you ask about the will?"
+  - Grandpa!!!
+  - Oh, Milly!
+  Audios:
+  - {fileID: 8300000, guid: d88df205580c2f64a9ebae7cefaa11ec, type: 3}
+  - {fileID: 8300000, guid: 2b8ae0dee1c451a469399cf8a647ad93, type: 3}
+  - {fileID: 8300000, guid: 904f5ceb670db364bbc037727534ae02, type: 3}
+  - {fileID: 8300000, guid: c12998040612f7242a265e6b2d486118, type: 3}
+  - {fileID: 8300000, guid: 0549beedd950ab5499dd599238d1e373, type: 3}
+  - {fileID: 8300000, guid: f9b221ac4d309814ab77c06e28416be4, type: 3}
+  - {fileID: 8300000, guid: 008172714c2f3c24384d8330606fec11, type: 3}
+  - {fileID: 8300000, guid: 8f746d79a3070444497a6c8e0c084ac3, type: 3}
+  - {fileID: 8300000, guid: 6491fe0045b37fb489e23ee7322fcf05, type: 3}
+  - {fileID: 8300000, guid: 873ed14e734b44842b02ee81c07290bc, type: 3}
+  - {fileID: 8300000, guid: f76a308a395590145b7d4f0749952b52, type: 3}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: goldenTooth
+  m_EditorClassIdentifier: 
+  sentences:
+  - I think her parents have gone crazy to put a golden tooth under the pillow.
+  - Do they really believe in tooth fairies?
+  - Not that smart, I guess.
+  - Did you say anything?
+  - "No. I\u2026 hmmm\u2026 naah."
+  Audios:
+  - {fileID: 8300000, guid: d161027774a6cb74ba8f46cb1ae2eb86, type: 3}
+  - {fileID: 8300000, guid: 9af44956211410f41a6be8290241a3a6, type: 3}
+  - {fileID: 8300000, guid: 2886261dab7896c4eafa642e18683509, type: 3}
+  - {fileID: 8300000, guid: ebaebdb14aba86249bc9275364934908, type: 3}
+  - {fileID: 8300000, guid: a6e74a8b153aa534a8b8a4d19f8de777, type: 3}

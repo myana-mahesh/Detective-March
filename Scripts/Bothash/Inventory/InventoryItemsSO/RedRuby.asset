@@ -20,5 +20,7 @@ MonoBehaviour:
   isMechanicTools: 0
   MechanicsDropObjectName: 
   ToolName: 
-  isDropAble: 0
-  DropObjectName: 
+  isDropAble: 1
+  DropObjectName: RubyHolder_L
+  isSimpleDrop: 0
+  simpleDropObjectName: 

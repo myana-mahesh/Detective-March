@@ -21,7 +21,7 @@ public class InstantiateDialogue : MonoBehaviour
     public void Dialogue3Display()
     {
         // todo save dialogue 
-        if (PlayerPrefs.HasKey(currentDialoguesPrefab.name))
+        if (FileBasedPrefs.HasKey(currentDialoguesPrefab.name))
         {
             Debug.Log("Start dialogue s1");
             FindObjectOfType<DialogueManager>().DisplayNextSentences();
@@ -30,9 +30,9 @@ public class InstantiateDialogue : MonoBehaviour
         else
         {
             Debug.Log("Start dialogue s2");
-            PlayerPrefs.SetString(currentDialoguesPrefab.name, "showed_once");
+            FileBasedPrefs.SetString(currentDialoguesPrefab.name, "showed_once");
             Instantiate(currentDialoguesPrefab);
-            //Debug.LogWarning(PlayerPrefs.GetString(currentDialoguesPrefab.name));
+            //Debug.LogWarning(FileBasedPrefs.GetString(currentDialoguesPrefab.name));
         }
     }
 

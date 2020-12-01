@@ -77,7 +77,16 @@ namespace bothash
                 images[albumSO.indexesOfActive[i]].SetActive(true);
             }
         }
-        
+
+       public int passCounter(){
+           int photoCounter=0;
+           foreach(GameObject photo in images){
+               if(photo.activeSelf){
+                   photoCounter++;
+               }
+           }
+           return photoCounter;
+        } 
          
     }
     

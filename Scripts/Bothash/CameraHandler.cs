@@ -15,7 +15,10 @@ namespace bothash {
         public GameObject[] character;
         public AudioClip[] Audios;
 
-        
+
+        public string SteamACH = "Perfect Shot";
+        public string tenPhotosACH;
+        public string allPhotosACH;
         // Update is called once per frame
         void Awake () {
             PositionAlwaysTo = this.transform.position;
@@ -53,10 +56,10 @@ namespace bothash {
             if (hit.collider.gameObject.GetComponent<Clickable> () != null) {
                 IEnumerator waitForFlash () {
                     yield return new WaitForSeconds (0.8f);
-                    if (!PlayerPrefs.HasKey(hit.collider.gameObject.name))
+                    if (!FileBasedPrefs.HasKey(hit.collider.gameObject.name))
                     {
                         hit.collider.gameObject.GetComponent<Clickable> ().startClickDialogues ();
-                        PlayerPrefs.SetInt(hit.collider.gameObject.name,1);
+                        FileBasedPrefs.SetInt(hit.collider.gameObject.name,1);
                     }
                     
                 }
@@ -71,7 +74,17 @@ namespace bothash {
                         Debug.Log (hit.collider.gameObject.name + "clicked");
                         hit.collider.gameObject.GetComponent<Clickable> ().albumRefference.SetActive (true);
                         CameraFlash.SetActive (true);
-                        disableAnimalExamine.Instance.check();
+
+                        SteamHandler.instance.SetAch(SteamACH);
+                        if(AlbumManager.Instance.passCounter()==10){
+                            Debug.Log("ach set for "+tenPhotosACH);
+                            SteamHandler.instance.SetAch(tenPhotosACH);
+                        }
+                        else if(AlbumManager.Instance.passCounter()==AlbumManager.Instance.images.Length){
+                            Debug.Log("ach set for "+allPhotosACH);
+                            SteamHandler.instance.SetAch(allPhotosACH);
+                        }
+                        //disableAnimalExamine.Instance.check();
                         }
 
                 }

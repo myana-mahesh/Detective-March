@@ -5,7 +5,7 @@ using UnityEngine;
 public class resultHandler : MonoBehaviour
 {
     public GameObject[] reward;
-    public GameObject examineJigsaw; 
+    public GameObject examine; 
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class resultHandler : MonoBehaviour
     {
         if (checkIfPicked())
         {
-            examineJigsaw.SetActive(false);
+            examine.SetActive(false);
         }
     }
     bool checkIfPicked(){

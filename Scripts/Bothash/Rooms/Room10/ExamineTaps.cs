@@ -13,8 +13,8 @@ public class ExamineTaps : MonoBehaviour {
 
     }
     private void OnMouseDown () {
-        if (!PlayerPrefs.HasKey ("keyDisplayed")) {
-            PlayerPrefs.SetInt ("clickedTaps", 1);
+        if (!FileBasedPrefs.HasKey ("keyDisplayed")) {
+            FileBasedPrefs.SetInt ("clickedTaps", 1);
         }
     }
 }

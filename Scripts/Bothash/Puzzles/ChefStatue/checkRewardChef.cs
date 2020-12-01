@@ -19,7 +19,7 @@ public class checkRewardChef : MonoBehaviour
     {   
         
         
-        PlayerPrefs.SetInt("chefClicked",1);
+        FileBasedPrefs.SetInt("chefClicked",1);
         //disableChef.Instance.check();
     }
 }

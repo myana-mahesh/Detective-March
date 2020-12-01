@@ -7,9 +7,27 @@ public class SilverCasket : MonoBehaviour {
     public SpriteRenderer mendalion1;
     public GameObject OpenBox;
     public GameObject[] mendalions;
+
+    public PuzzleSaveSO SavingSo;
+    private string fileName = "silvercasket.puzzle";
     // Start is called before the first frame update
     void Start () {
+        if (LoadData())
+        {
+            foreach(int i in SavingSo.IndicesOfActiveSpriteRenderer)
+            {
+                if (i == 0)
+                    mendalion0.enabled = true;
+                if (i == 1)
+                    mendalion1.enabled = true;
+            }
+        }
+    }
 
+    void OnDisable()
+    {
+        SaveData();
+        
     }
 
     // Update is called once per frame
@@ -20,7 +38,32 @@ public class SilverCasket : MonoBehaviour {
             {
                 item.SetActive(false);
             }
-            PlayerPrefs.SetInt ("SilverCasketComplete", 1);
+            FileBasedPrefs.SetInt ("SilverCasketComplete", 1);
         }
+    }
+
+
+    bool LoadData()
+    {
+        if (PuzzleDataSaveLoad.instance.Load(SavingSo, fileName) != null)
+        {
+            SavingSo = PuzzleDataSaveLoad.instance.Load(SavingSo, fileName);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    void SaveData()
+    {
+        SavingSo.IndicesOfActiveSpriteRenderer.Clear();
+        if (mendalion0.enabled)
+            SavingSo.IndicesOfActiveSpriteRenderer.Add(0);
+        if (mendalion1.enabled)
+            SavingSo.IndicesOfActiveSpriteRenderer.Add(1);
+
+        PuzzleDataSaveLoad.instance.Save(SavingSo, fileName);
     }
 }

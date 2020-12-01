@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: objectMismatch
+  m_EditorClassIdentifier: 
+  sentences:
+  - "Noooo\u2026.."
+  - Nothing happened.
+  - Not really.
+  Audios:
+  - {fileID: 8300000, guid: 7170e5aff4d94804a8b355fe6f32b2ba, type: 3}
+  - {fileID: 8300000, guid: 3de101c78305b844ab1ec966774709ba, type: 3}
+  - {fileID: 8300000, guid: 903cac5312041cf49ab0f2143d2cf1ce, type: 3}

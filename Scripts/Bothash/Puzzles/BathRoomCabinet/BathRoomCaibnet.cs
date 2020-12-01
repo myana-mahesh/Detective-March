@@ -40,7 +40,7 @@ public class BathRoomCaibnet : MonoBehaviour {
     }
     void ResetPass () {
         if (passWord.Length == 4) {
-            if (passWord == "1234") {
+            if (passWord == "5218") {
                 prize.SetActive (true);
             }
             passWord = "";

@@ -11,4 +11,5 @@ public class PuzzleSaveSO : ScriptableObject
     public bool RewardProcessed;
     public bool PuzzleCompleted;
     public bool RewardCollected;
+    public int DroppedCount;
 }

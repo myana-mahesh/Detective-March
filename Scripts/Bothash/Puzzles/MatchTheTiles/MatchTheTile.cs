@@ -10,13 +10,18 @@ namespace bothash {
         private GameObject first;
         private GameObject second;
         public bool firstNotPassed;
-        public static MatchTheTile Instance { get; private set; }
+        
         private int count;
         [SerializeField]
         private GameObject Prize;
         public GameObject[] tiles;
         public List<GameObject> dummyTiles = new List<GameObject> ();
         // Start is called before the first frame update
+
+        public static MatchTheTile Instance { get; private set; }
+
+        public string SteamACH = "Puzzle Master";
+        public string SteamACH1="Memorized";
 
         void Awake () {
             if (Instance == null) {
@@ -50,7 +55,7 @@ namespace bothash {
                 firstNotPassed = false;
                 first.GetComponent<SpriteRenderer>().enabled = true;
                 SoundManager.Instance.gameSounds[6].Play();
-            } else {
+            } else if(first.GetComponent<SpriteRenderer>().sprite.name!=secondToPass.GetComponent<SpriteRenderer>().sprite.name){
                 second = secondToPass;
                 firstNotPassed = true;
                 second.GetComponent<SpriteRenderer>().enabled = true;
@@ -70,11 +75,28 @@ namespace bothash {
 
                 if (count == 14) {
                     Prize.SetActive (true);
-                    
+                    SteamHandler.instance.SetAch(SteamACH1);
+                    if (FileBasedPrefs.HasKey("bigPuzzCount"))
+                    {
+                        FileBasedPrefs.SetInt("bigPuzzCount", FileBasedPrefs.GetInt("bigPuzzCount") + 1);
+                    }
+                    else
+                    {
+                        FileBasedPrefs.SetInt("bigPuzzCount", 1);
+                    }
+                    Debug.Log(FileBasedPrefs.GetInt("bigPuzzCount"));
+                    if (FileBasedPrefs.GetInt("bigPuzzCount") >= 8)
+                    {
+                        SteamHandler.instance.SetAch(SteamACH);
+                    }
+
+
+
+
                 }
                 Debug.Log ("match");
             } else {
-                StartCoroutine (waitFor3 ());;
+                StartCoroutine (waitFor3 ());
                 Debug.Log ("Notmatch");
 
             }

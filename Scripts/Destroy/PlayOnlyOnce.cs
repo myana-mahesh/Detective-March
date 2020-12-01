@@ -22,7 +22,7 @@ public class PlayOnlyOnce : MonoBehaviour
         // todo save hog 
         if (item != null)
         {
-            if (PlayerPrefs.HasKey(item.name))
+            if (FileBasedPrefs.HasKey(item.name))
             {
                 item.SetActive(false);
             }
@@ -34,9 +34,9 @@ public class PlayOnlyOnce : MonoBehaviour
     {
         if (item != null)
         {
-            if (!PlayerPrefs.HasKey(item.name))
+            if (!FileBasedPrefs.HasKey(item.name))
             {
-                PlayerPrefs.SetString(item.name, "hidden_once");
+                FileBasedPrefs.SetString(item.name, "hidden_once");
                 item.SetActive(false);
             }
         }
@@ -46,9 +46,9 @@ public class PlayOnlyOnce : MonoBehaviour
     {
         if (item != null)
         {
-            if (!PlayerPrefs.HasKey(item.name))
+            if (!FileBasedPrefs.HasKey(item.name))
             {
-                PlayerPrefs.SetString(item.name, "hidden_once");
+                FileBasedPrefs.SetString(item.name, "hidden_once");
                 item.SetActive(false);
             }
         }

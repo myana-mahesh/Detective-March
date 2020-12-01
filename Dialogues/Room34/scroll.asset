@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf041f5dd7e4fc44a6ece5eb4dd6d6f, type: 3}
+  m_Name: scroll
+  m_EditorClassIdentifier: 
+  sentences:
+  - "\u201CLions are herbivorous animals!\u201D"
+  - "That\u2019s not true\u2026"
+  Audios:
+  - {fileID: 8300000, guid: 898223ad583c66a48b63f1cbe7b1fb2b, type: 3}
+  - {fileID: 8300000, guid: b662ae40600aa6f488762aa8eaf15ec5, type: 3}

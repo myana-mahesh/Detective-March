@@ -14,8 +14,8 @@ public class NavAfterSilver : MonoBehaviour {
 
     }
     private void OnMouseDown () {
-        if (PlayerPrefs.HasKey ("BenardEntryDone") && !PlayerPrefs.HasKey ("NavAfterBenardEntry")) {
-            PlayerPrefs.SetInt ("NavAfterBenardEntry", 1);
+        if (FileBasedPrefs.HasKey ("BenardEntryDone") && !FileBasedPrefs.HasKey ("NavAfterBenardEntry")) {
+            FileBasedPrefs.SetInt ("NavAfterBenardEntry", 1);
             Block1stFLoorNav.SetActive (false);
 
         }
